@@ -15,15 +15,24 @@
   input { width:100%; box-sizing:border-box; padding:8px 12px; margin-bottom:16px; font:inherit; color:inherit; background:transparent; border:1px solid var(--line); border-radius:6px; }
   table { width:100%; border-collapse:collapse; }
   th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
-  th { color:var(--muted); font-weight:600; font-size:13px; }
-  td:nth-child(n+3), th:nth-child(n+3) { white-space:nowrap; }
+  th button { all:unset; cursor:pointer; color:var(--muted); font-weight:600; font-size:13px; }
+  th button:hover, th button:focus-visible { color:var(--fg); }
+  th button::after { content:" ↕"; opacity:.4; }
+  th[aria-sort=ascending] button::after { content:" ▲"; opacity:1; }
+  th[aria-sort=descending] button::after { content:" ▼"; opacity:1; }
+  .name a, .cat, .ver { white-space:nowrap; }
   .pre a { color:#d29922; }
   .desc { color:var(--muted); font-size:14px; }
-  .tag { font-size:12px; padding:1px 8px; border-radius:99px; background:var(--tag); margin-left:6px; }
+  .tag { font-size:12px; padding:1px 8px; border-radius:99px; background:var(--tag); }
+  .name .tag { margin-left:6px; }
   .date { display:block; color:var(--muted); font-size:12px; }
-  @media (max-width:600px) { th:nth-child(2), td:nth-child(2) { display:none; } td:nth-child(n+3) { white-space:normal; word-break:break-all; } td:first-child .desc { display:block; } }
-  td:first-child .desc { display:none; }
-  td:first-child > a { white-space:nowrap; }
+  .name .desc, .name .mcat { display:none; }
+  @media (max-width:700px) {
+    .col-desc, .cat { display:none; }
+    .name .desc { display:block; }
+    .name .mcat { display:inline; }
+    .ver { white-space:normal; word-break:break-all; }
+  }
 </style>
 </head>
 <body>
@@ -32,26 +41,63 @@
   <p>PS5 scene projects. Versions updated automatically. <a href="https://github.com/pedrohti/PS5LinkCentalizer#add-a-project">Add a project</a></p>
   <input id="q" type="search" placeholder="Search..." aria-label="Search">
   <table>
-    <thead><tr><th>Project</th><th>Description</th><th>Stable</th><th>Beta / Pre</th></tr></thead>
-    <tbody id="rows"><tr><td colspan="4">Loading…</td></tr></tbody>
+    <thead><tr>
+      <th data-key="name"><button>Project</button></th>
+      <th data-key="category" class="cat"><button>Category</button></th>
+      <th data-key="description" class="col-desc"><button>Description</button></th>
+      <th data-key="stable"><button title="Sort by release date">Stable</button></th>
+      <th data-key="pre"><button title="Sort by release date">Beta / Pre</button></th>
+    </tr></thead>
+    <tbody id="rows"><tr><td colspan="5">Loading…</td></tr></tbody>
   </table>
 </main>
 <script>
 const esc = s => String(s).replace(/[&<>"']/g, c => `&#${c.charCodeAt(0)};`);
 const rows = document.getElementById("rows");
+const q = document.getElementById("q");
 const ver = v => v ? `<a href="${esc(v.url)}">${esc(v.tag)}</a><span class="date">${esc(v.date)}</span>` : "—";
-fetch("data.json").then(r => r.json()).then(data => {
+// Version columns sort by release date: tags across projects aren't comparable
+const sortValue = (p, key) => key === "stable" || key === "pre" ? p[key]?.date ?? "" : p[key] ?? "";
+const cmp = new Intl.Collator("en", { numeric: true, sensitivity: "base" }).compare;
+let data = [];
+
+function render() {
   rows.innerHTML = data.map(p => `<tr>
-    <td><a href="${esc(p.url)}">${esc(p.name)}</a>${p.category ? `<span class="tag">${esc(p.category)}</span>` : ""}${p.archived ? `<span class="tag">archived</span>` : ""}<span class="desc">${esc(p.description)}</span></td>
-    <td class="desc">${esc(p.description)}</td>
-    <td>${ver(p.stable)}</td>
-    <td class="pre">${ver(p.pre)}</td>
+    <td class="name"><a href="${esc(p.url)}">${esc(p.name)}</a>${p.archived ? `<span class="tag">archived</span>` : ""}${p.category ? `<span class="tag mcat">${esc(p.category)}</span>` : ""}<span class="desc">${esc(p.description)}</span></td>
+    <td class="cat">${p.category ? `<span class="tag">${esc(p.category)}</span>` : ""}</td>
+    <td class="desc col-desc">${esc(p.description)}</td>
+    <td class="ver">${ver(p.stable)}</td>
+    <td class="ver pre">${ver(p.pre)}</td>
   </tr>`).join("");
-  document.getElementById("q").oninput = e => {
-    const q = e.target.value.toLowerCase();
-    for (const tr of rows.rows) tr.hidden = !tr.textContent.toLowerCase().includes(q);
+  filter();
+}
+
+function filter() {
+  const s = q.value.toLowerCase();
+  for (const tr of rows.rows) tr.hidden = !tr.textContent.toLowerCase().includes(s);
+}
+
+for (const th of document.querySelectorAll("th[data-key]")) {
+  th.querySelector("button").onclick = () => {
+    const key = th.dataset.key;
+    // text columns start A→Z, date columns start newest first
+    const first = key === "stable" || key === "pre" ? "descending" : "ascending";
+    const dir = th.getAttribute("aria-sort") === first ? (first === "ascending" ? "descending" : "ascending") : first;
+    document.querySelectorAll("th[aria-sort]").forEach(h => h.removeAttribute("aria-sort"));
+    th.setAttribute("aria-sort", dir);
+    const sign = dir === "ascending" ? 1 : -1;
+    data.sort((a, b) => {
+      const x = sortValue(a, key), y = sortValue(b, key);
+      if (!x !== !y) return x ? -1 : 1; // empty values always last
+      return sign * cmp(x, y);
+    });
+    render();
   };
-}).catch(() => rows.innerHTML = `<tr><td colspan="4">Failed to load data.json</td></tr>`);
+}
+
+q.oninput = filter;
+fetch("data.json").then(r => r.json()).then(d => { data = d; render(); })
+  .catch(() => rows.innerHTML = `<tr><td colspan="5">Failed to load data.json</td></tr>`);
 </script>
 </body>
 </html>

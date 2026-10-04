@@ -3,7 +3,7 @@
     "name": "hermes-link",
     "url": "https://github.com/Al-Azif/hermes-link",
     "description": "Multi-platform application to write data to a socket at a specified IP/hostname/domain and port.",
-    "category": "",
+    "category": "PC Tool",
     "stable": {
       "tag": "0.9.10",
       "url": "https://github.com/Al-Azif/hermes-link/releases/tag/0.9.10",
@@ -17,7 +17,7 @@
     "name": "onionHEN",
     "url": "https://github.com/aydencharles/onionHEN",
     "description": "Yet another HEN enabler for jailbroken PS5",
-    "category": "",
+    "category": "HEN",
     "stable": {
       "tag": "v0.0.13",
       "url": "https://github.com/aydencharles/onionHEN/releases/tag/v0.0.13",
@@ -35,7 +35,7 @@
     "name": "ProsperoEden",
     "url": "https://github.com/blackbearreloaded/ProsperoEden",
     "description": "Experimental Eden port for PS5",
-    "category": "",
+    "category": "Emulator",
     "stable": null,
     "pre": {
       "tag": "v1.000.050",
@@ -49,7 +49,7 @@
     "name": "ProsperoLight",
     "url": "https://github.com/blackbearreloaded/ProsperoLight",
     "description": "An unofficial Moonlight port (game streaming) for PS5",
-    "category": "",
+    "category": "Homebrew",
     "stable": {
       "tag": "01.000.060",
       "url": "https://github.com/blackbearreloaded/ProsperoLight/releases/tag/01.000.060",
@@ -67,7 +67,7 @@
     "name": "ps5-fsr4",
     "url": "https://github.com/blackbearreloaded/ps5-fsr4",
     "description": "A proof of concept of FSR4 running on PS5 GPU",
-    "category": "",
+    "category": "Dev",
     "stable": null,
     "pre": {
       "tag": "v0.1.0",
@@ -81,7 +81,7 @@
     "name": "ps5-homebrew-ui",
     "url": "https://github.com/blackbearreloaded/ps5-homebrew-ui",
     "description": "Reference for building polished, console-grade PS5 homebrew interfaces with OpenGL",
-    "category": "",
+    "category": "Dev",
     "stable": {
       "tag": "01.000.000",
       "url": "https://github.com/blackbearreloaded/ps5-homebrew-ui/releases/tag/01.000.000",
@@ -95,7 +95,7 @@
     "name": "nanoDNS",
     "url": "https://github.com/drakmor/nanoDNS",
     "description": "Playstation 4/5 DNS proxy server",
-    "category": "",
+    "category": "Network",
     "stable": {
       "tag": "0.4",
       "url": "https://github.com/drakmor/nanoDNS/releases/tag/0.4",
@@ -109,7 +109,7 @@
     "name": "ShadowMountPlus",
     "url": "https://github.com/drakmor/ShadowMountPlus",
     "description": "Automated background auto-mounter payload for jailbroken PS5 consoles. Detects, mounts, and installs game backups from internal or external storage, with support for UFS, exFAT, PFS, and nested compressed PFS containers.",
-    "category": "",
+    "category": "Payload",
     "stable": {
       "tag": "1.6test15-fix2",
       "url": "https://github.com/drakmor/ShadowMountPlus/releases/tag/1.6test15-fix2",
@@ -127,7 +127,7 @@
     "name": "kstuff-lite",
     "url": "https://github.com/EchoStretch/kstuff-lite",
     "description": "",
-    "category": "",
+    "category": "HEN",
     "stable": {
       "tag": "v1.11",
       "url": "https://github.com/EchoStretch/kstuff-lite/releases/tag/v1.11",
@@ -141,7 +141,7 @@
     "name": "ps5-app-dumper",
     "url": "https://github.com/EchoStretch/ps5-app-dumper",
     "description": "",
-    "category": "",
+    "category": "Payload",
     "stable": {
       "tag": "v2.10",
       "url": "https://github.com/EchoStretch/ps5-app-dumper/releases/tag/v2.10",
@@ -155,7 +155,7 @@
     "name": "psgfx",
     "url": "https://github.com/elripalda/psgfx",
     "description": "Custom icons and backgrounds for your PS5 homebrew and games. Works through PS5 Upload's payload.",
-    "category": "",
+    "category": "Customization",
     "stable": {
       "tag": "v1.1.0",
       "url": "https://github.com/elripalda/psgfx/releases/tag/v1.1.0",
@@ -169,7 +169,7 @@
     "name": "etahen-13.60",
     "url": "https://github.com/GronedWaffel/etahen-13.60",
     "description": "Unofficial etaHEN 2.5B source port for PS5 13.60. Original etaHEN by LightningMods and contributors.",
-    "category": "",
+    "category": "HEN",
     "stable": {
       "tag": "v2.5B-multifw-experimental.1",
       "url": "https://github.com/GronedWaffel/etahen-13.60/releases/tag/v2.5B-multifw-experimental.1",
@@ -183,7 +183,7 @@
     "name": "ps5-payload-manager",
     "url": "https://github.com/itsPLK/ps5-payload-manager",
     "description": "A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5.",
-    "category": "",
+    "category": "Payload",
     "stable": {
       "tag": "v0.5.2",
       "url": "https://github.com/itsPLK/ps5-payload-manager/releases/tag/v0.5.2",
@@ -197,7 +197,7 @@
     "name": "ps5-pkg-manager",
     "url": "https://github.com/itsPLK/ps5-pkg-manager",
     "description": "A clean and intuitive package manager for PS5",
-    "category": "",
+    "category": "Homebrew",
     "stable": {
       "tag": "v1.4.1",
       "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/tag/v1.4.1",
@@ -211,7 +211,7 @@
     "name": "ps5-webkit-autoloader",
     "url": "https://github.com/itsPLK/ps5-webkit-autoloader",
     "description": "An automated payload loader for exploited PS5 consoles",
-    "category": "",
+    "category": "Exploit",
     "stable": {
       "tag": "v0.5.2",
       "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.5.2",
@@ -225,7 +225,7 @@
     "name": "PS5-Game-Compressor",
     "url": "https://github.com/juma-sayeh/PS5-Game-Compressor",
     "description": "Standalone PS5 payload for compressing, unpacking, validating, and repairing ShadowMountPlus-mounted games",
-    "category": "",
+    "category": "Payload",
     "stable": {
       "tag": "v1.0.4",
       "url": "https://github.com/juma-sayeh/PS5-Game-Compressor/releases/tag/v1.0.4",
@@ -239,7 +239,7 @@
     "name": "KytyPS5",
     "url": "https://github.com/KytyPS5/KytyPS5",
     "description": "PlayStation 5 emulator for Windows, Linux and MacOS",
-    "category": "",
+    "category": "Emulator",
     "stable": null,
     "pre": {
       "tag": "KytyPS5-2026-10-03-feeced8",
@@ -253,7 +253,7 @@
     "name": "PS5_RetroArch",
     "url": "https://github.com/mihawk-99/PS5_RetroArch",
     "description": "🎮 RetroArch Homebrew for the PS5 that supports many cores.",
-    "category": "",
+    "category": "Emulator",
     "stable": null,
     "pre": {
       "tag": "v0.6.0-alpha.6",
@@ -267,7 +267,7 @@
     "name": "ps5-vulkan",
     "url": "https://github.com/mpereiraesaa/ps5-vulkan",
     "description": "Experimental Vulkan graphics and compute API for native PlayStation 5 homebrew (gfx1013).",
-    "category": "",
+    "category": "Dev",
     "pre": null,
     "updated": "2026-09-29",
     "archived": false
@@ -276,7 +276,7 @@
     "name": "ProsperoMgr",
     "url": "https://github.com/notmaj0r/ProsperoMgr",
     "description": "All-In-One manager for your PS5!",
-    "category": "",
+    "category": "Homebrew",
     "stable": {
       "tag": "v1.1",
       "url": "https://github.com/notmaj0r/ProsperoMgr/releases/tag/v1.1",
@@ -290,7 +290,7 @@
     "name": "PS5PKGTool",
     "url": "https://github.com/pearlxcore/PS5PKGTool",
     "description": "A Windows app for managing your PS5 dump and image collection, reading PS5 packages, and building or converting images.",
-    "category": "",
+    "category": "PC Tool",
     "stable": {
       "tag": "v1.2.0",
       "url": "https://github.com/pearlxcore/PS5PKGTool/releases/tag/v1.2.0",
@@ -304,7 +304,7 @@
     "name": "pegasus-dl",
     "url": "https://github.com/pegasus-ps5/pegasus-dl",
     "description": "Direct package downloading from your PS5",
-    "category": "",
+    "category": "Homebrew",
     "stable": {
       "tag": "v1.10.1",
       "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/tag/v1.10.1",
@@ -318,7 +318,7 @@
     "name": "ps5upload",
     "url": "https://github.com/phantomptr/ps5upload",
     "description": "PS5 Upload is a tool designed to get your apps and homebrew onto your console without the headache of slow transfers.",
-    "category": "",
+    "category": "PC Tool",
     "stable": {
       "tag": "v5.41.0",
       "url": "https://github.com/phantomptr/ps5upload/releases/tag/v5.41.0",
@@ -332,7 +332,7 @@
     "name": "poopicker",
     "url": "https://github.com/soniciso1/poopicker",
     "description": "Pick a pooP2JB build and your console type",
-    "category": "",
+    "category": "Exploit",
     "stable": {
       "tag": "host-2026.08.29",
       "url": "https://github.com/soniciso1/poopicker/releases/tag/host-2026.08.29",
@@ -346,7 +346,7 @@
     "name": "PS-DiscordPresence",
     "url": "https://github.com/StonedModder/PS-DiscordPresence",
     "description": "",
-    "category": "",
+    "category": "PC Tool",
     "stable": {
       "tag": "v0.01",
       "url": "https://github.com/StonedModder/PS-DiscordPresence/releases/tag/v0.01",
@@ -360,7 +360,7 @@
     "name": "Prospero-Explorer",
     "url": "https://github.com/SvenGDK/Prospero-Explorer",
     "description": "A file explorer homebrew application for the PS5 console, written in C# on top of the SharpProspero SDK.",
-    "category": "",
+    "category": "Homebrew",
     "stable": {
       "tag": "v1.0",
       "url": "https://github.com/SvenGDK/Prospero-Explorer/releases/tag/v1.0",
@@ -374,7 +374,7 @@
     "name": "Prospero-Multi-Tools",
     "url": "https://github.com/SvenGDK/Prospero-Multi-Tools",
     "description": "PS5 Homebrew Backup Manager & Toolkit for PS1, PS2, PS3, PS4, PS5, PSP and PS Vita backups.",
-    "category": "",
+    "category": "PC Tool",
     "stable": {
       "tag": "v1",
       "url": "https://github.com/SvenGDK/Prospero-Multi-Tools/releases/tag/v1",
@@ -388,7 +388,7 @@
     "name": "PS5SX2",
     "url": "https://github.com/Swordpdf/PS5SX2",
     "description": "A port of PCSX2 for PS5",
-    "category": "",
+    "category": "Emulator",
     "stable": {
       "tag": "vk-285-128",
       "url": "https://github.com/Swordpdf/PS5SX2/releases/tag/vk-285-128",
