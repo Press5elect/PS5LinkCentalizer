@@ -96,7 +96,7 @@ for (const th of document.querySelectorAll("th[data-key]")) {
 }
 
 q.oninput = filter;
-fetch("data.json").then(r => r.json()).then(d => { data = d; render(); })
+fetch("data.json").then(r => r.json()).then(d => { data = d; document.querySelector("th[data-key=name] button").click(); }) // default: A→Z
   .catch(() => rows.innerHTML = `<tr><td colspan="5">Failed to load data.json</td></tr>`);
 </script>
 </body>
