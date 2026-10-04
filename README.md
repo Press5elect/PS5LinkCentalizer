@@ -20,3 +20,16 @@ Don't edit `data.json`, it is generated automatically.
 - Pre-release = flagged as such on GitHub **or** tag containing `alpha`, `beta`, `rc`, `nightly`, `dev`, `pre`, `test`, `experimental`, or a trailing commit hash.
 - Repos without releases: uses tags (`git ls-remote`), sorted by version.
 - Local: `node scripts/update.mjs` (Node 20+). Set `GITHUB_TOKEN` to avoid the 60 req/h limit.
+
+## Disclaimer
+
+PS5LinkCentalizer is only a link index. Its sole purpose is to make PS5 scene projects easier to find by gathering them in one place.
+
+- The maintainers of this repository are **not affiliated** with, and do not develop, endorse, host, or distribute, any of the listed projects. All projects belong to their respective authors.
+- Listed projects are provided by third parties **as is**. We make no guarantees about their safety, legality, or fitness for any purpose, and we are **not responsible** for any damage, data loss, banned accounts, bricked consoles, or other consequences of using them.
+- Using homebrew or jailbreak software may violate the terms of service of your console or account and the laws of your jurisdiction. You use any listed project entirely at your own risk.
+- If you are the author of a listed project and want it removed, open an issue.
+
+## License
+
+[MIT](LICENSE)
