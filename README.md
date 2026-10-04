@@ -1,6 +1,6 @@
 # PS5 Links
 
-Link hub for the PS5 jailbreak scene. Page: GitHub Pages serving `index.html`.
+Link hub for the PS5 jailbreak scene.
 
 ## Add a project
 
