@@ -38,8 +38,8 @@
     "category": "Emulator",
     "stable": null,
     "pre": {
-      "tag": "v1.000.050",
-      "url": "https://github.com/blackbearreloaded/ProsperoEden/releases/tag/v1.000.050",
+      "tag": "v1.000.070",
+      "url": "https://github.com/blackbearreloaded/ProsperoEden/releases/tag/v1.000.070",
       "date": "2026-10-04"
     },
     "updated": "2026-10-04",
@@ -172,8 +172,8 @@
       "date": "2026-10-01"
     },
     "pre": {
-      "tag": "v2.5B-multifw-experimental.1",
-      "url": "https://github.com/GronedWaffel/etahen-13.60/releases/tag/v2.5B-multifw-experimental.1",
+      "tag": "v2.5B-multifw-experimental.3",
+      "url": "https://github.com/GronedWaffel/etahen-13.60/releases/tag/v2.5B-multifw-experimental.3",
       "date": "2026-10-04"
     },
     "updated": "2026-10-04",
@@ -242,8 +242,8 @@
     "category": "Emulator",
     "stable": null,
     "pre": {
-      "tag": "KytyPS5-2026-10-04-2984c41",
-      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-04-2984c41",
+      "tag": "KytyPS5-2026-10-04-c885da0",
+      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-04-c885da0",
       "date": "2026-10-04"
     },
     "updated": "2026-10-04",
@@ -401,7 +401,7 @@
   {
     "name": "ps5-tailscale",
     "url": "https://github.com/holdmysocks/ps5-tailscale",
-    "description": "Tailscale for jailbroken PS5: reach the console over your tailnet and stream to it with Moonlight/Sunshine (unofficial)",
+    "description": "Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play and stream to it with Moonlight/Sunshine (unofficial)",
     "category": "Network",
     "stable": {
       "tag": "v0.5.2",
@@ -418,8 +418,8 @@
     "description": "Wii U and 3DS emulation for PS5 homebrew (Cemu + Azahar)",
     "category": "Emulator",
     "stable": {
-      "tag": "v2.0.0d",
-      "url": "https://github.com/premohq/PS5CEMU-HAR/releases/tag/v2.0.0d",
+      "tag": "v3.0.0",
+      "url": "https://github.com/premohq/PS5CEMU-HAR/releases/tag/v3.0.0",
       "date": "2026-10-04"
     },
     "pre": null,
