@@ -30,6 +30,10 @@ PS5LinkCentalizer is only a link index. Its sole purpose is to make PS5 scene pr
 - Using homebrew or jailbreak software may violate the terms of service of your console or account and the laws of your jurisdiction. You use any listed project entirely at your own risk.
 - If you are the author of a listed project and want it removed, open an issue.
 
+## AI usage
+
+This hub was built with the help of AI (Claude Code). I used it to speed up production and because I'm not very familiar with GitHub Actions and the GitHub API. All code was reviewed and is maintained by me; issues and PRs with improvements are welcome.
+
 ## License
 
 [MIT](LICENSE)
