@@ -17,6 +17,6 @@ Não edite `data.json` — é gerado automaticamente.
 ## Como funciona
 
 - `.github/workflows/update.yml` roda a cada 6h (e quando `projects.json` muda), busca a última versão estável e a última beta/pre-release (se mais nova) de cada repo e commita `data.json`.
-- Pre-release = marcada como tal no GitHub **ou** tag com `alpha`, `beta`, `rc`, `nightly`, `dev`, `pre`, `test` ou hash de commit no final.
+- Pre-release = marcada como tal no GitHub **ou** tag com `alpha`, `beta`, `rc`, `nightly`, `dev`, `pre`, `test`, `experimental` ou hash de commit no final.
 - Repo sem releases: usa as tags (`git ls-remote`), ordenadas por versão.
 - Local: `node scripts/update.mjs` (Node 20+). Defina `GITHUB_TOKEN` para evitar limite de 60 req/h.

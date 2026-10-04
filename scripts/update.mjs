@@ -15,7 +15,7 @@ async function gh(path) {
 
 // Authors often publish betas/nightlies without ticking "pre-release", so also look at the tag name.
 // ponytail: name heuristic, add a per-project override in projects.json if it misfires
-const PRE = /alpha|beta|\brc|\bpre|nightly|\bdev|canary|preview|\btest|-[0-9a-f]{7,}$/i;
+const PRE = /alpha|beta|(?<![a-z])(rc|pre|dev|test)|nightly|canary|experimental|-[0-9a-f]{7,}$/i;
 const byVersionDesc = new Intl.Collator("en", { numeric: true }).compare;
 
 function fromReleases(releases) {
