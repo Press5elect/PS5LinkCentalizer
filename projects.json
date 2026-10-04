@@ -28,5 +28,5 @@
   { "repo": "SvenGDK/Prospero-Multi-Tools",      "category": "PC Tool" },
   { "repo": "Swordpdf/PS5SX2",                   "category": "Emulator" },
   { "repo": "holdmysocks/ps5-tailscale",         "category": "Network" },
-  { "repo": "premohq/PS5CEMU-HAR",               "category": "Network" }
+  { "repo": "premohq/PS5CEMU-HAR",               "category": "Emulator" }
 ]
