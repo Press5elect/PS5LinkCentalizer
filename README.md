@@ -1,22 +1,22 @@
 # PS5 Links
 
-Centralizador de links da cena de jailbreak do PS5. Página: GitHub Pages servindo `index.html`.
+Link hub for the PS5 jailbreak scene. Page: GitHub Pages serving `index.html`.
 
-## Adicionar projeto
+## Add a project
 
-1. Edite [`projects.json`](projects.json) (dá pra fazer direto pelo GitHub, botão ✏️).
-2. Adicione uma linha:
+1. Edit [`projects.json`](projects.json) (you can do it right on GitHub with the ✏️ button).
+2. Add a line:
    ```json
-   { "repo": "dono/repositorio", "category": "Payload" }
+   { "repo": "owner/repository", "category": "Payload" }
    ```
-   Campos opcionais: `name` e `description` (sobrescrevem os do GitHub), `category`.
-3. Abra o Pull Request. O check valida o JSON e se o repo existe.
+   Optional fields: `name` and `description` (override the GitHub ones), `category`.
+3. Open a Pull Request. The check validates the JSON and that the repo exists.
 
-Não edite `data.json` — é gerado automaticamente.
+Don't edit `data.json`, it is generated automatically.
 
-## Como funciona
+## How it works
 
-- `.github/workflows/update.yml` roda a cada 6h (e quando `projects.json` muda), busca a última versão estável e a última beta/pre-release (se mais nova) de cada repo e commita `data.json`.
-- Pre-release = marcada como tal no GitHub **ou** tag com `alpha`, `beta`, `rc`, `nightly`, `dev`, `pre`, `test`, `experimental` ou hash de commit no final.
-- Repo sem releases: usa as tags (`git ls-remote`), ordenadas por versão.
-- Local: `node scripts/update.mjs` (Node 20+). Defina `GITHUB_TOKEN` para evitar limite de 60 req/h.
+- `.github/workflows/update.yml` runs every 6h (and when `projects.json` changes), fetches the latest stable version and the latest beta/pre-release (if newer) of each repo, and commits `data.json`.
+- Pre-release = flagged as such on GitHub **or** tag containing `alpha`, `beta`, `rc`, `nightly`, `dev`, `pre`, `test`, `experimental`, or a trailing commit hash.
+- Repos without releases: uses tags (`git ls-remote`), sorted by version.
+- Local: `node scripts/update.mjs` (Node 20+). Set `GITHUB_TOKEN` to avoid the 60 req/h limit.
