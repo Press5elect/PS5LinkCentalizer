@@ -1,0 +1,18 @@
+name: Validate PR
+
+on:
+  pull_request:
+    paths: [projects.json]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # Fails on invalid JSON, bad repo format, or GitHub API errors
+      - run: node scripts/update.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

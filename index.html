@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PS5 Links</title>
+<style>
+  :root { --bg:#0d1117; --fg:#e6edf3; --muted:#8b949e; --line:#30363d; --link:#58a6ff; --tag:#1f6feb33; }
+  @media (prefers-color-scheme: light) { :root { --bg:#fff; --fg:#1f2328; --muted:#59636e; --line:#d1d9e0; --link:#0969da; --tag:#ddf4ff; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.5 system-ui, sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:24px 16px; }
+  h1 { margin:0 0 4px; font-size:24px; }
+  p { color:var(--muted); margin:0 0 16px; }
+  a { color:var(--link); text-decoration:none; } a:hover { text-decoration:underline; }
+  input { width:100%; box-sizing:border-box; padding:8px 12px; margin-bottom:16px; font:inherit; color:inherit; background:transparent; border:1px solid var(--line); border-radius:6px; }
+  table { width:100%; border-collapse:collapse; }
+  th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; font-size:13px; }
+  td:nth-child(n+3), th:nth-child(n+3) { white-space:nowrap; }
+  .pre a { color:#d29922; }
+  .desc { color:var(--muted); font-size:14px; }
+  .tag { font-size:12px; padding:1px 8px; border-radius:99px; background:var(--tag); margin-left:6px; }
+  .date { display:block; color:var(--muted); font-size:12px; }
+  @media (max-width:600px) { th:nth-child(2), td:nth-child(2) { display:none; } td:nth-child(n+3) { white-space:normal; word-break:break-all; } td:first-child .desc { display:block; } }
+  td:first-child .desc { display:none; }
+</style>
+</head>
+<body>
+<main>
+  <h1>PS5 Links</h1>
+  <p>Projetos da cena PS5. Versões atualizadas automaticamente. <a href="https://github.com/pedrohti/PS5LinkCentalizer#adicionar-projeto">Adicionar projeto</a></p>
+  <input id="q" type="search" placeholder="Buscar..." aria-label="Buscar">
+  <table>
+    <thead><tr><th>Projeto</th><th>Descrição</th><th>Estável</th><th>Beta / Pre</th></tr></thead>
+    <tbody id="rows"><tr><td colspan="4">Carregando…</td></tr></tbody>
+  </table>
+</main>
+<script>
+const esc = s => String(s).replace(/[&<>"']/g, c => `&#${c.charCodeAt(0)};`);
+const rows = document.getElementById("rows");
+const ver = v => v ? `<a href="${esc(v.url)}">${esc(v.tag)}</a><span class="date">${esc(v.date)}</span>` : "—";
+fetch("data.json").then(r => r.json()).then(data => {
+  rows.innerHTML = data.map(p => `<tr>
+    <td><a href="${esc(p.url)}">${esc(p.name)}</a>${p.category ? `<span class="tag">${esc(p.category)}</span>` : ""}${p.archived ? `<span class="tag">arquivado</span>` : ""}<span class="desc">${esc(p.description)}</span></td>
+    <td class="desc">${esc(p.description)}</td>
+    <td>${ver(p.stable)}</td>
+    <td class="pre">${ver(p.pre)}</td>
+  </tr>`).join("");
+  document.getElementById("q").oninput = e => {
+    const q = e.target.value.toLowerCase();
+    for (const tr of rows.rows) tr.hidden = !tr.textContent.toLowerCase().includes(q);
+  };
+}).catch(() => rows.innerHTML = `<tr><td colspan="4">Erro ao carregar data.json</td></tr>`);
+</script>
+</body>
+</html>
