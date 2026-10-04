@@ -242,9 +242,9 @@
     "category": "Emulator",
     "stable": null,
     "pre": {
-      "tag": "KytyPS5-2026-10-03-feeced8",
-      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-03-feeced8",
-      "date": "2026-10-03"
+      "tag": "KytyPS5-2026-10-04-2984c41",
+      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-04-2984c41",
+      "date": "2026-10-04"
     },
     "updated": "2026-10-04",
     "archived": false
@@ -416,7 +416,7 @@
     "name": "PS5CEMU-HAR",
     "url": "https://github.com/premohq/PS5CEMU-HAR",
     "description": "Wii U and 3DS emulation for PS5 homebrew (Cemu + Azahar)",
-    "category": "Network",
+    "category": "Emulator",
     "stable": {
       "tag": "v2.0.0d",
       "url": "https://github.com/premohq/PS5CEMU-HAR/releases/tag/v2.0.0d",
