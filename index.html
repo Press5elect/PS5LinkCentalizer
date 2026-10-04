@@ -25,6 +25,7 @@
   .desc { color:var(--muted); font-size:14px; }
   .tag { font-size:12px; padding:1px 8px; border-radius:99px; background:var(--tag); }
   .name .tag { margin-left:6px; }
+  footer { margin-top:24px; color:var(--muted); font-size:13px; }
   .date { display:block; color:var(--muted); font-size:12px; }
   .name .desc, .name .mcat { display:none; }
   @media (max-width:700px) {
@@ -50,6 +51,10 @@
     </tr></thead>
     <tbody id="rows"><tr><td colspan="5">Loading…</td></tr></tbody>
   </table>
+  <footer>
+    Disclaimer: this is only a link index. Not affiliated with, and not responsible for, any listed project — all belong to their respective authors and are used at your own risk.
+    <a href="https://github.com/pedrohti/PS5LinkCentalizer#disclaimer">Full disclaimer</a>
+  </footer>
 </main>
 <script>
 const esc = s => String(s).replace(/[&<>"']/g, c => `&#${c.charCodeAt(0)};`);
