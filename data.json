@@ -110,11 +110,7 @@
     "url": "https://github.com/drakmor/ShadowMountPlus",
     "description": "Automated background auto-mounter payload for jailbroken PS5 consoles. Detects, mounts, and installs game backups from internal or external storage, with support for UFS, exFAT, PFS, and nested compressed PFS containers.",
     "category": "Payload",
-    "stable": {
-      "tag": "1.6test15-fix2",
-      "url": "https://github.com/drakmor/ShadowMountPlus/releases/tag/1.6test15-fix2",
-      "date": "2026-06-03"
-    },
+    "stable": null,
     "pre": {
       "tag": "1.7beta4",
       "url": "https://github.com/drakmor/ShadowMountPlus/releases/tag/1.7beta4",
@@ -171,11 +167,15 @@
     "description": "Unofficial etaHEN 2.5B source port for PS5 13.60. Original etaHEN by LightningMods and contributors.",
     "category": "HEN",
     "stable": {
+      "tag": "v2.5B-13.60-r3",
+      "url": "https://github.com/GronedWaffel/etahen-13.60/releases/tag/v2.5B-13.60-r3",
+      "date": "2026-10-01"
+    },
+    "pre": {
       "tag": "v2.5B-multifw-experimental.1",
       "url": "https://github.com/GronedWaffel/etahen-13.60/releases/tag/v2.5B-multifw-experimental.1",
       "date": "2026-10-04"
     },
-    "pre": null,
     "updated": "2026-10-04",
     "archived": false
   },
