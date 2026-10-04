@@ -30,5 +30,6 @@
   { "repo": "holdmysocks/ps5-tailscale",         "category": "Network" },
   { "repo": "premohq/PS5CEMU-HAR",               "category": "Emulator" },
   { "repo": "sinfiltros/AnyPad-PS5"              "category": "Payload" },
-  { "repo": "ItsBlurf/PoorDS4"                   "category": "Payload" }
+  { "repo": "ItsBlurf/PoorDS4"                   "category": "Payload" },
+  { "repo": "illusionyy/ps-patch-system"         "category": "Homebrew" }
 ]
