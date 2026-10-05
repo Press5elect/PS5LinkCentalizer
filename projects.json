@@ -9,7 +9,6 @@
   { "repo": "drakmor/ShadowMountPlus",           "category": "Payload" },
   { "repo": "EchoStretch/kstuff-lite",           "category": "HEN" },
   { "repo": "EchoStretch/ps5-app-dumper",        "category": "Payload" },
-  { "repo": "elripalda/psgfx",                   "category": "Customization" },
   { "repo": "GronedWaffel/etahen-13.60",         "category": "HEN" },
   { "repo": "itsPLK/ps5-payload-manager",        "category": "Payload" },
   { "repo": "itsPLK/ps5-pkg-manager",            "category": "Homebrew" },
@@ -29,7 +28,6 @@
   { "repo": "Swordpdf/PS5SX2",                   "category": "Emulator" },
   { "repo": "holdmysocks/ps5-tailscale",         "category": "Network" },
   { "repo": "premohq/PS5CEMU-HAR",               "category": "Emulator" },
-  { "repo": "sinfiltros/AnyPad-PS5",              "category": "Payload" },
   { "repo": "ItsBlurf/PoorDS4",                  "category": "Payload" },
   { "repo": "illusionyy/ps-patch-system",        "category": "Homebrew" },
   { "repo": "blackbearreloaded/ProsperoStore",   "category": "Homebrew" }

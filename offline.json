@@ -1,0 +1,18 @@
+[
+  {
+    "repo": "elripalda/psgfx",
+    "name": "psgfx",
+    "description": "Custom icons and backgrounds for your PS5 homebrew and games. Works through PS5 Upload's payload.",
+    "category": "Customization",
+    "lastVersion": "v1.1.0",
+    "offlineSince": "2026-10-05"
+  },
+  {
+    "repo": "sinfiltros/AnyPad-PS5",
+    "name": "AnyPad-PS5",
+    "description": "Free your PS5 from the DualSense — use DualShock 4, Xbox, Switch Pro, 8BitDo and any Bluetooth gamepad on a jailbroken PS5 / Libera tu PS5 del DualSense — usa mandos Bluetooth en una PS5 con jailbreak",
+    "category": "Payload",
+    "lastVersion": "v0.5.5-beta",
+    "offlineSince": "2026-10-05"
+  }
+]

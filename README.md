@@ -12,13 +12,14 @@ Link hub for the PS5 jailbreak scene.
    Optional fields: `name` and `description` (override the GitHub ones), `category`.
 3. Open a Pull Request. The check validates the JSON and that the repo exists.
 
-Don't edit `data.json`, it is generated automatically.
+Don't edit `data.json` or `offline.json`, they are generated automatically.
 
 ## How it works
 
 - `.github/workflows/update.yml` runs every 6h (and when `projects.json` changes), fetches the latest stable version and the latest beta/pre-release (if newer) of each repo, and commits `data.json`.
 - Pre-release = flagged as such on GitHub **or** tag containing `alpha`, `beta`, `rc`, `nightly`, `dev`, `pre`, `test`, `experimental`, or a trailing commit hash.
 - Repos without releases: uses tags (`git ls-remote`), sorted by version.
+- Dead repos (404): the PR check fails. On the scheduled run they are moved from `projects.json` to `offline.json`, keeping their last known info, and listed on `offline.html`. Re-adding a repo that is back online removes it from `offline.json`.
 - Local: `node scripts/update.mjs` (Node 20+). Set `GITHUB_TOKEN` to avoid the 60 req/h limit.
 
 ## Disclaimer

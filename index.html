@@ -4,57 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PS5 Links</title>
-<style>
-  :root { color-scheme:dark; --bg:#0d1117; --fg:#e6edf3; --muted:#8b949e; --line:#30363d; --link:#58a6ff; --tag:#1f6feb33; }
-  @media (prefers-color-scheme: light) { :root { color-scheme:light; --bg:#fff; --fg:#1f2328; --muted:#59636e; --line:#d1d9e0; --link:#0969da; --tag:#ddf4ff; } }
-  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.5 system-ui, sans-serif; }
-  main { max-width:1200px; margin:0 auto; padding:0 16px 24px; }
-  /* Top block and table header stay visible while scrolling; --top = header height, set in JS */
-  .top { position:sticky; top:0; z-index:2; background:var(--bg); padding-top:24px; }
-  th { position:sticky; top:var(--top, 0); z-index:1; background:var(--bg); box-shadow:inset 0 -1px var(--line); }
-  h1 { margin:0 0 4px; font-size:24px; }
-  p { color:var(--muted); margin:0 0 16px; }
-  a { color:var(--link); text-decoration:none; } a:hover { text-decoration:underline; }
-  input { width:100%; box-sizing:border-box; padding:8px 12px; margin-bottom:16px; font:inherit; color:inherit; background:transparent; border:1px solid var(--line); border-radius:6px; }
-  table { width:100%; border-collapse:collapse; }
-  th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
-  th button { all:unset; cursor:pointer; color:var(--muted); font-weight:600; font-size:13px; }
-  th button:hover, th button:focus-visible { color:var(--fg); }
-  th button::after { content:" ↕"; opacity:.4; }
-  th[aria-sort=ascending] button::after { content:" ▲"; opacity:1; }
-  th[aria-sort=descending] button::after { content:" ▼"; opacity:1; }
-  .name a, .cat, .ver { white-space:nowrap; }
-  .pre a { color:#d29922; }
-  .stars { white-space:nowrap; text-align:right; }
-  .stars::before { content:"★ "; color:#e3b341; }
-  .desc { color:var(--muted); font-size:14px; }
-  .tag { font-size:12px; padding:1px 8px; border-radius:99px; background:var(--tag); }
-  .name .tag { margin-left:6px; }
-  #pager { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; margin-top:16px; color:var(--muted); font-size:13px; }
-  #pager select, #pager button { font:inherit; color:var(--fg); background:transparent; border:1px solid var(--line); border-radius:6px; padding:4px 10px; cursor:pointer; }
-  #pager select, #pager option { background:var(--bg); }
-  #pager button:disabled { opacity:.4; cursor:default; }
-  #pager .nav { margin-left:auto; display:flex; align-items:center; gap:8px; }
-  #totop { position:fixed; right:16px; bottom:16px; z-index:3; width:44px; height:44px; border-radius:50%; border:1px solid var(--line); background:var(--bg); color:var(--fg); font-size:20px; cursor:pointer; box-shadow:0 2px 8px #0006; }
-  #totop[hidden] { display:none; }
-  footer { margin-top:24px; color:var(--muted); font-size:13px; }
-  .date { display:block; color:var(--muted); font-size:12px; }
-  .name .desc, .name .mcat { display:none; }
-  @media (max-width:700px) {
-    th, td { padding:10px 4px; }
-    .col-desc, .cat { display:none; }
-    .name .desc { display:block; overflow-wrap:anywhere; }
-    .name .mcat { display:inline; }
-    .ver { white-space:normal; overflow-wrap:anywhere; min-width:5em; }
-    .name a { white-space:normal; overflow-wrap:anywhere; }
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
   <header class="top">
   <h1>PS5 Links</h1>
-  <p>PS5 scene projects. Versions updated automatically. <a href="https://github.com/pedrohti/PS5LinkCentalizer#add-a-project">Add a project</a></p>
+  <p>PS5 scene projects. Versions updated automatically. <a href="https://github.com/pedrohti/PS5LinkCentalizer#add-a-project">Add a project</a> · <a href="offline.html">Offline projects</a></p>
   <input id="q" type="search" placeholder="Search..." aria-label="Search">
   </header>
   <table>

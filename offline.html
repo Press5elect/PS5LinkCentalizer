@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PS5 Links · Offline</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header style="padding-top:24px">
+    <h1>Offline projects</h1>
+    <p>Repositories that were listed here but no longer exist on GitHub (deleted, made private or taken down). Kept for reference. <a href="./">← Back to PS5 Links</a></p>
+  </header>
+  <table>
+    <thead><tr>
+      <th>Project</th>
+      <th class="cat">Category</th>
+      <th class="col-desc">Description</th>
+      <th>Last version</th>
+      <th>Offline since</th>
+    </tr></thead>
+    <tbody id="rows"><tr><td colspan="5">Loading…</td></tr></tbody>
+  </table>
+  <footer>
+    Disclaimer: this is only a link index. Not affiliated with, and not responsible for, any listed project — all belong to their respective authors and are used at your own risk.
+    <a href="https://github.com/pedrohti/PS5LinkCentalizer#disclaimer">Full disclaimer</a>
+  </footer>
+</main>
+<script>
+const esc = s => String(s).replace(/[&<>"']/g, c => `&#${c.charCodeAt(0)};`);
+const rows = document.getElementById("rows");
+fetch("offline.json").then(r => r.json()).then(list => {
+  list.sort((a, b) => b.offlineSince.localeCompare(a.offlineSince)); // most recent first
+  rows.innerHTML = list.map(p => `<tr>
+    <td class="name">${esc(p.name)}<span class="date">${esc(p.repo)}</span>${p.category ? `<span class="tag mcat">${esc(p.category)}</span>` : ""}<span class="desc">${esc(p.description)}</span></td>
+    <td class="cat">${p.category ? `<span class="tag">${esc(p.category)}</span>` : ""}</td>
+    <td class="desc col-desc">${esc(p.description)}</td>
+    <td class="ver">${esc(p.lastVersion || "—")}</td>
+    <td class="ver">${esc(p.offlineSince)}</td>
+  </tr>`).join("") || `<tr><td colspan="5">No offline projects 🎉</td></tr>`;
+}).catch(() => rows.innerHTML = `<tr><td colspan="5">Failed to load offline.json</td></tr>`);
+</script>
+</body>
+</html>

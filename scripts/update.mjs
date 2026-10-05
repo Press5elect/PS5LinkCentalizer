@@ -1,6 +1,8 @@
 // Reads projects.json, fetches repo info + latest stable/pre-release from GitHub, writes data.json.
+// Repos that return 404 are moved from projects.json to offline.json (shown on offline.html).
 // Usage: node scripts/update.mjs   (set GITHUB_TOKEN to avoid the 60 req/h anonymous limit)
 import { readFile, writeFile } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 
 const headers = { Accept: "application/vnd.github+json", "User-Agent": "ps5-link-centralizer" };
@@ -42,7 +44,11 @@ function fromTags(htmlUrl) {
   return { stable, pre: pre && (!stable || byVersionDesc(pre.tag, stable.tag) > 0) ? pre : null };
 }
 
-const projects = JSON.parse(await readFile("projects.json", "utf8"));
+const readJson = async (f, fallback) => existsSync(f) ? JSON.parse(await readFile(f, "utf8")) : fallback;
+const projects = await readJson("projects.json");
+const previous = await readJson("data.json", []);
+let offline = await readJson("offline.json", []);
+const key = r => r.toLowerCase();
 const out = [];
 const dead = [];
 
@@ -66,11 +72,39 @@ for (const p of projects) {
   console.log(`${p.repo} -> ${stable?.tag ?? "-"} | ${pre?.tag ?? "-"}`);
 }
 
-await writeFile("data.json", JSON.stringify(out, null, 2) + "\n");
-// Read by the workflow to open/close the dead-repos issue
-await writeFile("dead.txt", dead.map(r => r + "\n").join(""));
-// STRICT (PR check): any dead repo fails the run
+// STRICT (PR check): any dead repo fails the run, nothing is moved
 if (process.env.STRICT && dead.length) {
   console.error(`Repos not found: ${dead.join(", ")}`);
   process.exit(1);
 }
+
+await writeFile("data.json", JSON.stringify(out, null, 2) + "\n");
+
+// A repo listed again in projects.json and alive is no longer offline
+const alive = new Set(projects.filter(p => !dead.includes(p.repo)).map(p => key(p.repo)));
+offline = offline.filter(o => !alive.has(key(o.repo)));
+
+if (dead.length) {
+  const today = new Date().toISOString().slice(0, 10);
+  for (const r of dead) {
+    const p = projects.find(p => p.repo === r);
+    const last = previous.find(d => key(d.url) === key(`https://github.com/${r}`)) ?? {};
+    offline.push({
+      repo: r,
+      name: p.name ?? last.name ?? r.split("/")[1],
+      description: p.description ?? last.description ?? "",
+      category: p.category ?? last.category ?? "",
+      lastVersion: (last.stable ?? last.pre)?.tag ?? "",
+      offlineSince: today,
+    });
+  }
+  // One entry per line, same layout as the hand-edited file
+  const kept = projects.filter(p => !dead.includes(p.repo));
+  const w = Math.max(...kept.map(p => p.repo.length));
+  const line = p => {
+    const rest = Object.entries(p).filter(([k]) => k !== "repo").map(([k, v]) => `${JSON.stringify(k)}: ${JSON.stringify(v)}`);
+    return `  { "repo": ${JSON.stringify(p.repo)}` + (rest.length ? `,${" ".repeat(w - p.repo.length)} ${rest.join(", ")}` : "") + " }";
+  };
+  await writeFile("projects.json", "[\n" + kept.map(line).join(",\n") + "\n]\n");
+}
+await writeFile("offline.json", JSON.stringify(offline, null, 2) + "\n");
