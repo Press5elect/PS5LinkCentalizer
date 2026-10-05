@@ -32,4 +32,5 @@
   { "repo": "illusionyy/ps-patch-system",        "category": "Homebrew" },
   { "repo": "blackbearreloaded/ProsperoStore",   "category": "Homebrew" },
   { "repo": "drakmor/fetchpkg-gui",              "category": "Homebrew" }
+  { "repo": "Press5Elect/PSFlycast",             "category": "Emulator" }
 ]
