@@ -45,7 +45,7 @@
       "date": "2026-10-04"
     },
     "updated": "2026-10-05",
-    "stars": 372,
+    "stars": 375,
     "archived": false
   },
   {
@@ -78,7 +78,7 @@
       "url": "https://github.com/blackbearreloaded/ps5-fsr4/releases/tag/v0.1.0",
       "date": "2026-09-29"
     },
-    "updated": "2026-09-30",
+    "updated": "2026-10-05",
     "stars": 26,
     "archived": false
   },
@@ -124,7 +124,7 @@
       "date": "2026-10-03"
     },
     "updated": "2026-10-04",
-    "stars": 728,
+    "stars": 729,
     "archived": false
   },
   {
@@ -139,7 +139,7 @@
     },
     "pre": null,
     "updated": "2026-09-23",
-    "stars": 605,
+    "stars": 606,
     "archived": false
   },
   {
@@ -188,7 +188,7 @@
     },
     "pre": null,
     "updated": "2026-09-29",
-    "stars": 442,
+    "stars": 443,
     "archived": false
   },
   {
@@ -218,7 +218,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
-    "stars": 738,
+    "stars": 740,
     "archived": false
   },
   {
@@ -248,7 +248,7 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 5293,
+    "stars": 5300,
     "archived": false
   },
   {
@@ -263,7 +263,7 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 107,
+    "stars": 109,
     "archived": false
   },
   {
@@ -303,7 +303,7 @@
     },
     "pre": null,
     "updated": "2026-10-02",
-    "stars": 65,
+    "stars": 67,
     "archived": false
   },
   {
@@ -331,9 +331,13 @@
       "url": "https://github.com/phantomptr/ps5upload/releases/tag/v5.41.0",
       "date": "2026-10-01"
     },
-    "pre": null,
+    "pre": {
+      "tag": "v6.0.0",
+      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.0.0",
+      "date": "2026-10-05"
+    },
     "updated": "2026-10-05",
-    "stars": 486,
+    "stars": 488,
     "archived": false
   },
   {
@@ -408,7 +412,7 @@
     },
     "pre": null,
     "updated": "2026-10-04",
-    "stars": 293,
+    "stars": 295,
     "archived": false
   },
   {
@@ -438,7 +442,7 @@
     },
     "pre": null,
     "updated": "2026-10-04",
-    "stars": 166,
+    "stars": 170,
     "archived": false
   },
   {
@@ -487,7 +491,22 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 42,
+    "stars": 44,
+    "archived": false
+  },
+  {
+    "name": "fetchpkg-gui",
+    "url": "https://github.com/drakmor/fetchpkg-gui",
+    "description": "",
+    "category": "Homebrew",
+    "stable": {
+      "tag": "1.0.4",
+      "url": "https://github.com/drakmor/fetchpkg-gui/releases/tag/1.0.4",
+      "date": "2026-08-05"
+    },
+    "pre": null,
+    "updated": "2026-08-05",
+    "stars": 5,
     "archived": false
   }
 ]
