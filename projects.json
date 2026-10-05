@@ -31,5 +31,6 @@
   { "repo": "premohq/PS5CEMU-HAR",               "category": "Emulator" },
   { "repo": "sinfiltros/AnyPad-PS5"              "category": "Payload" },
   { "repo": "ItsBlurf/PoorDS4"                   "category": "Payload" },
-  { "repo": "illusionyy/ps-patch-system"         "category": "Homebrew" }
+  { "repo": "illusionyy/ps-patch-system"         "category": "Homebrew" },
+  { "repo": "blackbearreloaded/ProsperoStore"    "category": "Homebrew" }
 ]
