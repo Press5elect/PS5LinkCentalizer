@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency: update
 
@@ -31,3 +32,15 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -am "chore: update versions"
           git push
+      - name: Report dead repos
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          title="Dead repositories in projects.json"
+          num=$(gh issue list --state open --search "\"$title\" in:title" --json number -q '.[0].number')
+          if [ -s dead.txt ]; then
+            body=$(printf 'These repos return 404 and are hidden from the page. Remove or fix them in `projects.json`:\n\n'; sed 's|.*|- https://github.com/&|' dead.txt)
+            if [ -n "$num" ]; then gh issue edit "$num" --body "$body"; else gh issue create --title "$title" --body "$body"; fi
+          elif [ -n "$num" ]; then
+            gh issue close "$num" --comment "All repos are reachable again."
+          fi

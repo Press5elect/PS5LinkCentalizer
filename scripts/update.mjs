@@ -44,11 +44,12 @@ function fromTags(htmlUrl) {
 
 const projects = JSON.parse(await readFile("projects.json", "utf8"));
 const out = [];
+const dead = [];
 
 for (const p of projects) {
   if (!/^[\w.-]+\/[\w.-]+$/.test(p.repo ?? "")) throw new Error(`invalid repo: ${JSON.stringify(p)}`);
   const repo = await gh(`/repos/${p.repo}`);
-  if (!repo) { console.warn(`skip (not found): ${p.repo}`); continue; }
+  if (!repo) { console.warn(`dead (404): ${p.repo}`); dead.push(p.repo); continue; }
   const releases = await gh(`/repos/${p.repo}/releases?per_page=30`);
   const { stable, pre } = releases?.length ? fromReleases(releases) : fromTags(repo.html_url);
   out.push({
@@ -59,9 +60,17 @@ for (const p of projects) {
     stable,
     pre,
     updated: repo.pushed_at.slice(0, 10),
+    stars: repo.stargazers_count,
     archived: repo.archived,
   });
   console.log(`${p.repo} -> ${stable?.tag ?? "-"} | ${pre?.tag ?? "-"}`);
 }
 
 await writeFile("data.json", JSON.stringify(out, null, 2) + "\n");
+// Read by the workflow to open/close the dead-repos issue
+await writeFile("dead.txt", dead.map(r => r + "\n").join(""));
+// STRICT (PR check): any dead repo fails the run
+if (process.env.STRICT && dead.length) {
+  console.error(`Repos not found: ${dead.join(", ")}`);
+  process.exit(1);
+}

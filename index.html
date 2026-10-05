@@ -22,6 +22,8 @@
   th[aria-sort=descending] button::after { content:" ▼"; opacity:1; }
   .name a, .cat, .ver { white-space:nowrap; }
   .pre a { color:#d29922; }
+  .stars { white-space:nowrap; text-align:right; }
+  .stars::before { content:"★ "; color:#e3b341; }
   .desc { color:var(--muted); font-size:14px; }
   .tag { font-size:12px; padding:1px 8px; border-radius:99px; background:var(--tag); }
   .name .tag { margin-left:6px; }
@@ -29,10 +31,11 @@
   .date { display:block; color:var(--muted); font-size:12px; }
   .name .desc, .name .mcat { display:none; }
   @media (max-width:700px) {
+    th, td { padding:10px 4px; }
     .col-desc, .cat { display:none; }
-    .name .desc { display:block; }
+    .name .desc { display:block; overflow-wrap:anywhere; }
     .name .mcat { display:inline; }
-    .ver { white-space:normal; overflow-wrap:anywhere; min-width:5.5em; }
+    .ver { white-space:normal; overflow-wrap:anywhere; min-width:5em; }
     .name a { white-space:normal; overflow-wrap:anywhere; }
   }
 </style>
@@ -45,12 +48,13 @@
   <table>
     <thead><tr>
       <th data-key="name"><button>Project</button></th>
+      <th data-key="stars"><button title="GitHub stars">★</button></th>
       <th data-key="category" class="cat"><button>Category</button></th>
       <th data-key="description" class="col-desc"><button>Description</button></th>
       <th data-key="stable"><button title="Sort by release date">Stable</button></th>
       <th data-key="pre"><button title="Sort by release date">Beta / Pre</button></th>
     </tr></thead>
-    <tbody id="rows"><tr><td colspan="5">Loading…</td></tr></tbody>
+    <tbody id="rows"><tr><td colspan="6">Loading…</td></tr></tbody>
   </table>
   <footer>
     Disclaimer: this is only a link index. Not affiliated with, and not responsible for, any listed project — all belong to their respective authors and are used at your own risk.
@@ -63,13 +67,14 @@ const rows = document.getElementById("rows");
 const q = document.getElementById("q");
 const ver = v => v ? `<a href="${esc(v.url)}">${esc(v.tag)}</a><span class="date">${esc(v.date)}</span>` : "—";
 // Version columns sort by release date: tags across projects aren't comparable
-const sortValue = (p, key) => key === "stable" || key === "pre" ? p[key]?.date ?? "" : p[key] ?? "";
+const sortValue = (p, key) => key === "stable" || key === "pre" ? p[key]?.date ?? "" : String(p[key] ?? "");
 const cmp = new Intl.Collator("en", { numeric: true, sensitivity: "base" }).compare;
 let data = [];
 
 function render() {
   rows.innerHTML = data.map(p => `<tr>
     <td class="name"><a href="${esc(p.url)}">${esc(p.name)}</a>${p.archived ? `<span class="tag">archived</span>` : ""}${p.category ? `<span class="tag mcat">${esc(p.category)}</span>` : ""}<span class="desc">${esc(p.description)}</span></td>
+    <td class="stars">${p.stars ?? 0}</td>
     <td class="cat">${p.category ? `<span class="tag">${esc(p.category)}</span>` : ""}</td>
     <td class="desc col-desc">${esc(p.description)}</td>
     <td class="ver">${ver(p.stable)}</td>
@@ -86,8 +91,8 @@ function filter() {
 for (const th of document.querySelectorAll("th[data-key]")) {
   th.querySelector("button").onclick = () => {
     const key = th.dataset.key;
-    // text columns start A→Z, date columns start newest first
-    const first = key === "stable" || key === "pre" ? "descending" : "ascending";
+    // text columns start A→Z, date and star columns start highest first
+    const first = ["stable", "pre", "stars"].includes(key) ? "descending" : "ascending";
     const dir = th.getAttribute("aria-sort") === first ? (first === "ascending" ? "descending" : "ascending") : first;
     document.querySelectorAll("th[aria-sort]").forEach(h => h.removeAttribute("aria-sort"));
     th.setAttribute("aria-sort", dir);
@@ -103,7 +108,7 @@ for (const th of document.querySelectorAll("th[data-key]")) {
 
 q.oninput = filter;
 fetch("data.json").then(r => r.json()).then(d => { data = d; document.querySelector("th[data-key=name] button").click(); }) // default: A→Z
-  .catch(() => rows.innerHTML = `<tr><td colspan="5">Failed to load data.json</td></tr>`);
+  .catch(() => rows.innerHTML = `<tr><td colspan="6">Failed to load data.json</td></tr>`);
 </script>
 </body>
 </html>

@@ -12,7 +12,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      # Fails on invalid JSON, bad repo format, or GitHub API errors
+      # Fails on invalid JSON, bad repo format, dead (404) repos, or GitHub API errors
       - run: node scripts/update.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          STRICT: 1
