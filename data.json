@@ -42,7 +42,7 @@
       "url": "https://github.com/blackbearreloaded/ProsperoEden/releases/tag/v1.000.070",
       "date": "2026-10-04"
     },
-    "updated": "2026-10-04",
+    "updated": "2026-10-05",
     "archived": false
   },
   {
@@ -116,7 +116,7 @@
       "url": "https://github.com/drakmor/ShadowMountPlus/releases/tag/1.7beta4",
       "date": "2026-10-03"
     },
-    "updated": "2026-10-03",
+    "updated": "2026-10-04",
     "archived": false
   },
   {
@@ -172,8 +172,8 @@
       "date": "2026-10-01"
     },
     "pre": {
-      "tag": "v2.5B-multifw-experimental.3",
-      "url": "https://github.com/GronedWaffel/etahen-13.60/releases/tag/v2.5B-multifw-experimental.3",
+      "tag": "v2.5B-multifw-experimental.5",
+      "url": "https://github.com/GronedWaffel/etahen-13.60/releases/tag/v2.5B-multifw-experimental.5",
       "date": "2026-10-04"
     },
     "updated": "2026-10-04",
@@ -218,7 +218,7 @@
       "date": "2026-09-30"
     },
     "pre": null,
-    "updated": "2026-09-30",
+    "updated": "2026-10-05",
     "archived": false
   },
   {
@@ -242,11 +242,11 @@
     "category": "Emulator",
     "stable": null,
     "pre": {
-      "tag": "KytyPS5-2026-10-04-c885da0",
-      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-04-c885da0",
-      "date": "2026-10-04"
+      "tag": "KytyPS5-2026-10-05-af3011c",
+      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-05-af3011c",
+      "date": "2026-10-05"
     },
-    "updated": "2026-10-04",
+    "updated": "2026-10-05",
     "archived": false
   },
   {
@@ -260,7 +260,7 @@
       "url": "https://github.com/mihawk-99/PS5_RetroArch/releases/tag/v0.6.0-alpha.6",
       "date": "2026-10-02"
     },
-    "updated": "2026-10-02",
+    "updated": "2026-10-05",
     "archived": false
   },
   {
@@ -325,7 +325,7 @@
       "date": "2026-10-01"
     },
     "pre": null,
-    "updated": "2026-10-04",
+    "updated": "2026-10-05",
     "archived": false
   },
   {
@@ -424,6 +424,66 @@
     },
     "pre": null,
     "updated": "2026-10-04",
+    "archived": false
+  },
+  {
+    "name": "AnyPad-PS5",
+    "url": "https://github.com/sinfiltros/AnyPad-PS5",
+    "description": "Free your PS5 from the DualSense — use DualShock 4, Xbox, Switch Pro, 8BitDo and any Bluetooth gamepad on a jailbroken PS5 / Libera tu PS5 del DualSense — usa mandos Bluetooth en una PS5 con jailbreak",
+    "category": "Payload",
+    "stable": null,
+    "pre": {
+      "tag": "v0.5.5-beta",
+      "url": "https://github.com/sinfiltros/AnyPad-PS5/releases/tag/v0.5.5-beta",
+      "date": "2026-10-03"
+    },
+    "updated": "2026-10-03",
+    "archived": false
+  },
+  {
+    "name": "PoorDS4",
+    "url": "https://github.com/ItsBlurf/PoorDS4",
+    "description": "Use a wireless DualShock 4 in native PS5 games on jailbroken consoles.",
+    "category": "Payload",
+    "stable": null,
+    "pre": {
+      "tag": "v0.1.0-rc51",
+      "url": "https://github.com/ItsBlurf/PoorDS4/releases/tag/v0.1.0-rc51",
+      "date": "2026-09-30"
+    },
+    "updated": "2026-09-30",
+    "archived": false
+  },
+  {
+    "name": "ps-patch-system",
+    "url": "https://github.com/illusionyy/ps-patch-system",
+    "description": "App patching system for PS4/PS5",
+    "category": "Homebrew",
+    "stable": {
+      "tag": "32151111844",
+      "url": "https://github.com/illusionyy/ps-patch-system/releases/tag/32151111844",
+      "date": "2026-08-18"
+    },
+    "pre": {
+      "tag": "34252662366",
+      "url": "https://github.com/illusionyy/ps-patch-system/releases/tag/34252662366",
+      "date": "2026-09-08"
+    },
+    "updated": "2026-09-08",
+    "archived": false
+  },
+  {
+    "name": "ProsperoStore",
+    "url": "https://github.com/blackbearreloaded/ProsperoStore",
+    "description": "Native PS5 app store for the homebrew catalog at homebrew.page (title PPSA99000)",
+    "category": "Homebrew",
+    "stable": null,
+    "pre": {
+      "tag": "v1.000.000",
+      "url": "https://github.com/blackbearreloaded/ProsperoStore/releases/tag/v1.000.000",
+      "date": "2026-10-05"
+    },
+    "updated": "2026-10-05",
     "archived": false
   }
 ]
