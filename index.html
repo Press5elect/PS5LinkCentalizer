@@ -5,10 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PS5 Links</title>
 <style>
-  :root { --bg:#0d1117; --fg:#e6edf3; --muted:#8b949e; --line:#30363d; --link:#58a6ff; --tag:#1f6feb33; }
-  @media (prefers-color-scheme: light) { :root { --bg:#fff; --fg:#1f2328; --muted:#59636e; --line:#d1d9e0; --link:#0969da; --tag:#ddf4ff; } }
+  :root { color-scheme:dark; --bg:#0d1117; --fg:#e6edf3; --muted:#8b949e; --line:#30363d; --link:#58a6ff; --tag:#1f6feb33; }
+  @media (prefers-color-scheme: light) { :root { color-scheme:light; --bg:#fff; --fg:#1f2328; --muted:#59636e; --line:#d1d9e0; --link:#0969da; --tag:#ddf4ff; } }
   body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.5 system-ui, sans-serif; }
-  main { max-width:1200px; margin:0 auto; padding:24px 16px; }
+  main { max-width:1200px; margin:0 auto; padding:0 16px 24px; }
+  /* Top block and table header stay visible while scrolling; --top = header height, set in JS */
+  .top { position:sticky; top:0; z-index:2; background:var(--bg); padding-top:24px; }
+  th { position:sticky; top:var(--top, 0); z-index:1; background:var(--bg); box-shadow:inset 0 -1px var(--line); }
   h1 { margin:0 0 4px; font-size:24px; }
   p { color:var(--muted); margin:0 0 16px; }
   a { color:var(--link); text-decoration:none; } a:hover { text-decoration:underline; }
@@ -27,6 +30,13 @@
   .desc { color:var(--muted); font-size:14px; }
   .tag { font-size:12px; padding:1px 8px; border-radius:99px; background:var(--tag); }
   .name .tag { margin-left:6px; }
+  #pager { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; margin-top:16px; color:var(--muted); font-size:13px; }
+  #pager select, #pager button { font:inherit; color:var(--fg); background:transparent; border:1px solid var(--line); border-radius:6px; padding:4px 10px; cursor:pointer; }
+  #pager select, #pager option { background:var(--bg); }
+  #pager button:disabled { opacity:.4; cursor:default; }
+  #pager .nav { margin-left:auto; display:flex; align-items:center; gap:8px; }
+  #totop { position:fixed; right:16px; bottom:16px; z-index:3; width:44px; height:44px; border-radius:50%; border:1px solid var(--line); background:var(--bg); color:var(--fg); font-size:20px; cursor:pointer; box-shadow:0 2px 8px #0006; }
+  #totop[hidden] { display:none; }
   footer { margin-top:24px; color:var(--muted); font-size:13px; }
   .date { display:block; color:var(--muted); font-size:12px; }
   .name .desc, .name .mcat { display:none; }
@@ -42,9 +52,11 @@
 </head>
 <body>
 <main>
+  <header class="top">
   <h1>PS5 Links</h1>
   <p>PS5 scene projects. Versions updated automatically. <a href="https://github.com/pedrohti/PS5LinkCentalizer#add-a-project">Add a project</a></p>
   <input id="q" type="search" placeholder="Search..." aria-label="Search">
+  </header>
   <table>
     <thead><tr>
       <th data-key="name"><button>Project</button></th>
@@ -56,10 +68,15 @@
     </tr></thead>
     <tbody id="rows"><tr><td colspan="6">Loading…</td></tr></tbody>
   </table>
+  <nav id="pager" aria-label="Pagination">
+    <label>Show <select id="size"><option>15</option><option>30</option><option>50</option><option value="0">All</option></select></label>
+    <span class="nav"><button id="prev" aria-label="Previous page">‹ Prev</button><span id="info"></span><button id="next" aria-label="Next page">Next ›</button></span>
+  </nav>
   <footer>
     Disclaimer: this is only a link index. Not affiliated with, and not responsible for, any listed project — all belong to their respective authors and are used at your own risk.
     <a href="https://github.com/pedrohti/PS5LinkCentalizer#disclaimer">Full disclaimer</a>
   </footer>
+  <button id="totop" hidden aria-label="Back to top" title="Back to top">↑</button>
 </main>
 <script>
 const esc = s => String(s).replace(/[&<>"']/g, c => `&#${c.charCodeAt(0)};`);
@@ -69,23 +86,31 @@ const ver = v => v ? `<a href="${esc(v.url)}">${esc(v.tag)}</a><span class="date
 // Version columns sort by release date: tags across projects aren't comparable
 const sortValue = (p, key) => key === "stable" || key === "pre" ? p[key]?.date ?? "" : String(p[key] ?? "");
 const cmp = new Intl.Collator("en", { numeric: true, sensitivity: "base" }).compare;
-let data = [];
+const topBar = document.querySelector(".top");
+new ResizeObserver(() => document.documentElement.style.setProperty("--top", topBar.offsetHeight + "px")).observe(topBar);
+const [size, prev, next, info] = ["size", "prev", "next", "info"].map(id => document.getElementById(id));
+let data = [], page = 1;
 
-function render() {
-  rows.innerHTML = data.map(p => `<tr>
+const row = p => `<tr>
     <td class="name"><a href="${esc(p.url)}">${esc(p.name)}</a>${p.archived ? `<span class="tag">archived</span>` : ""}${p.category ? `<span class="tag mcat">${esc(p.category)}</span>` : ""}<span class="desc">${esc(p.description)}</span></td>
     <td class="stars">${p.stars ?? 0}</td>
     <td class="cat">${p.category ? `<span class="tag">${esc(p.category)}</span>` : ""}</td>
     <td class="desc col-desc">${esc(p.description)}</td>
     <td class="ver">${ver(p.stable)}</td>
     <td class="ver pre">${ver(p.pre)}</td>
-  </tr>`).join("");
-  filter();
-}
+  </tr>`;
 
-function filter() {
+// Search runs over the whole list, then the page is cut from the result
+function render() {
   const s = q.value.toLowerCase();
-  for (const tr of rows.rows) tr.hidden = !tr.textContent.toLowerCase().includes(s);
+  const list = data.filter(p => [p.name, p.category, p.description, p.stable?.tag, p.pre?.tag].join(" ").toLowerCase().includes(s));
+  const per = +size.value || list.length || 1; // "All" = 0
+  const pages = Math.max(1, Math.ceil(list.length / per));
+  page = Math.min(page, pages);
+  rows.innerHTML = list.slice((page - 1) * per, page * per).map(row).join("") || `<tr><td colspan="6">No results</td></tr>`;
+  info.textContent = `Page ${page} of ${pages} · ${list.length} projects`;
+  prev.disabled = page === 1;
+  next.disabled = page === pages;
 }
 
 for (const th of document.querySelectorAll("th[data-key]")) {
@@ -102,11 +127,19 @@ for (const th of document.querySelectorAll("th[data-key]")) {
       if (!x !== !y) return x ? -1 : 1; // empty values always last
       return sign * cmp(x, y);
     });
+    page = 1;
     render();
   };
 }
 
-q.oninput = filter;
+q.oninput = size.onchange = () => { page = 1; render(); };
+const toTop = () => scrollTo({ top: 0, behavior: "smooth" });
+prev.onclick = () => { page--; render(); toTop(); };
+next.onclick = () => { page++; render(); toTop(); };
+// Floating button only once the list has scrolled past the first screen
+const totop = document.getElementById("totop");
+totop.onclick = toTop;
+addEventListener("scroll", () => totop.hidden = scrollY < innerHeight / 2, { passive: true });
 fetch("data.json").then(r => r.json()).then(d => { data = d; document.querySelector("th[data-key=name] button").click(); }) // default: A→Z
   .catch(() => rows.innerHTML = `<tr><td colspan="6">Failed to load data.json</td></tr>`);
 </script>
