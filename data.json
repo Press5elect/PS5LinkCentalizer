@@ -11,6 +11,7 @@
     },
     "pre": null,
     "updated": "2026-05-25",
+    "stars": 61,
     "archived": false
   },
   {
@@ -29,6 +30,7 @@
       "date": "2026-10-03"
     },
     "updated": "2026-10-03",
+    "stars": 335,
     "archived": false
   },
   {
@@ -43,6 +45,7 @@
       "date": "2026-10-04"
     },
     "updated": "2026-10-05",
+    "stars": 371,
     "archived": false
   },
   {
@@ -60,7 +63,8 @@
       "url": "https://github.com/blackbearreloaded/ProsperoLight/releases/tag/01.000.080",
       "date": "2026-10-03"
     },
-    "updated": "2026-10-04",
+    "updated": "2026-10-05",
+    "stars": 97,
     "archived": false
   },
   {
@@ -75,6 +79,7 @@
       "date": "2026-09-29"
     },
     "updated": "2026-09-30",
+    "stars": 26,
     "archived": false
   },
   {
@@ -89,6 +94,7 @@
     },
     "pre": null,
     "updated": "2026-10-03",
+    "stars": 30,
     "archived": false
   },
   {
@@ -103,6 +109,7 @@
     },
     "pre": null,
     "updated": "2026-08-04",
+    "stars": 338,
     "archived": false
   },
   {
@@ -117,6 +124,7 @@
       "date": "2026-10-03"
     },
     "updated": "2026-10-04",
+    "stars": 725,
     "archived": false
   },
   {
@@ -131,6 +139,7 @@
     },
     "pre": null,
     "updated": "2026-09-23",
+    "stars": 604,
     "archived": false
   },
   {
@@ -145,20 +154,7 @@
     },
     "pre": null,
     "updated": "2026-10-03",
-    "archived": false
-  },
-  {
-    "name": "psgfx",
-    "url": "https://github.com/elripalda/psgfx",
-    "description": "Custom icons and backgrounds for your PS5 homebrew and games. Works through PS5 Upload's payload.",
-    "category": "Customization",
-    "stable": {
-      "tag": "v1.1.0",
-      "url": "https://github.com/elripalda/psgfx/releases/tag/v1.1.0",
-      "date": "2026-10-03"
-    },
-    "pre": null,
-    "updated": "2026-10-03",
+    "stars": 145,
     "archived": false
   },
   {
@@ -177,6 +173,7 @@
       "date": "2026-10-04"
     },
     "updated": "2026-10-04",
+    "stars": 55,
     "archived": false
   },
   {
@@ -191,6 +188,7 @@
     },
     "pre": null,
     "updated": "2026-09-29",
+    "stars": 441,
     "archived": false
   },
   {
@@ -205,6 +203,7 @@
     },
     "pre": null,
     "updated": "2026-09-27",
+    "stars": 166,
     "archived": false
   },
   {
@@ -219,6 +218,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
+    "stars": 735,
     "archived": false
   },
   {
@@ -233,6 +233,7 @@
     },
     "pre": null,
     "updated": "2026-08-21",
+    "stars": 229,
     "archived": false
   },
   {
@@ -247,6 +248,7 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
+    "stars": 5281,
     "archived": false
   },
   {
@@ -256,11 +258,12 @@
     "category": "Emulator",
     "stable": null,
     "pre": {
-      "tag": "v0.6.0-alpha.6",
-      "url": "https://github.com/mihawk-99/PS5_RetroArch/releases/tag/v0.6.0-alpha.6",
-      "date": "2026-10-02"
+      "tag": "v0.6.7-alpha.6",
+      "url": "https://github.com/mihawk-99/PS5_RetroArch/releases/tag/v0.6.7-alpha.6",
+      "date": "2026-10-05"
     },
     "updated": "2026-10-05",
+    "stars": 103,
     "archived": false
   },
   {
@@ -270,6 +273,7 @@
     "category": "Dev",
     "pre": null,
     "updated": "2026-09-29",
+    "stars": 17,
     "archived": false
   },
   {
@@ -284,6 +288,7 @@
     },
     "pre": null,
     "updated": "2026-09-28",
+    "stars": 120,
     "archived": false
   },
   {
@@ -298,6 +303,7 @@
     },
     "pre": null,
     "updated": "2026-10-02",
+    "stars": 64,
     "archived": false
   },
   {
@@ -312,12 +318,13 @@
     },
     "pre": null,
     "updated": "2026-09-30",
+    "stars": 255,
     "archived": false
   },
   {
     "name": "ps5upload",
     "url": "https://github.com/phantomptr/ps5upload",
-    "description": "PS5 Upload is a tool designed to get your apps and homebrew onto your console without the headache of slow transfers.",
+    "description": "PS5 Upload gets your games, apps and homebrew onto a jailbroken PS5 quickly and reliably: uploads resume after a dropped connection, installs pick the route that works, and you can browse files, manage the console and run cheats from your computer, phone or browser.",
     "category": "PC Tool",
     "stable": {
       "tag": "v5.41.0",
@@ -326,6 +333,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
+    "stars": 485,
     "archived": false
   },
   {
@@ -340,6 +348,7 @@
     },
     "pre": null,
     "updated": "2026-10-01",
+    "stars": 38,
     "archived": false
   },
   {
@@ -354,6 +363,7 @@
     },
     "pre": null,
     "updated": "2026-07-17",
+    "stars": 8,
     "archived": false
   },
   {
@@ -368,6 +378,7 @@
     },
     "pre": null,
     "updated": "2026-09-12",
+    "stars": 25,
     "archived": false
   },
   {
@@ -382,6 +393,7 @@
     },
     "pre": null,
     "updated": "2026-09-25",
+    "stars": 19,
     "archived": false
   },
   {
@@ -396,6 +408,7 @@
     },
     "pre": null,
     "updated": "2026-10-04",
+    "stars": 291,
     "archived": false
   },
   {
@@ -410,6 +423,7 @@
     },
     "pre": null,
     "updated": "2026-10-04",
+    "stars": 29,
     "archived": false
   },
   {
@@ -424,20 +438,7 @@
     },
     "pre": null,
     "updated": "2026-10-04",
-    "archived": false
-  },
-  {
-    "name": "AnyPad-PS5",
-    "url": "https://github.com/sinfiltros/AnyPad-PS5",
-    "description": "Free your PS5 from the DualSense — use DualShock 4, Xbox, Switch Pro, 8BitDo and any Bluetooth gamepad on a jailbroken PS5 / Libera tu PS5 del DualSense — usa mandos Bluetooth en una PS5 con jailbreak",
-    "category": "Payload",
-    "stable": null,
-    "pre": {
-      "tag": "v0.5.5-beta",
-      "url": "https://github.com/sinfiltros/AnyPad-PS5/releases/tag/v0.5.5-beta",
-      "date": "2026-10-03"
-    },
-    "updated": "2026-10-03",
+    "stars": 158,
     "archived": false
   },
   {
@@ -452,6 +453,7 @@
       "date": "2026-09-30"
     },
     "updated": "2026-09-30",
+    "stars": 90,
     "archived": false
   },
   {
@@ -470,6 +472,7 @@
       "date": "2026-09-08"
     },
     "updated": "2026-09-08",
+    "stars": 112,
     "archived": false
   },
   {
@@ -484,6 +487,7 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
+    "stars": 38,
     "archived": false
   }
 ]
