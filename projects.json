@@ -31,8 +31,7 @@
   { "repo": "ItsBlurf/PoorDS4",                  "category": "Payload" },
   { "repo": "illusionyy/ps-patch-system",        "category": "Homebrew" },
   { "repo": "blackbearreloaded/ProsperoStore",   "category": "Homebrew" },
-  { "repo": "drakmor/fetchpkg-gui",              "category": "Homebrew" }
-  { "repo": "Press5elect/PSFlyCast",             "category": "Emulator" }
   { "repo": "drakmor/fetchpkg-gui",              "category": "Homebrew" },
-  { "repo": "MangoScango/ps5-account-tools",     "category": "PC Tool" }
+  { "repo": "MangoScango/ps5-account-tools",     "category": "PC Tool" },
+  { "repo": "Press5elect/PSFlycast",             "category": "Emulator" }
 ]
