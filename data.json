@@ -45,7 +45,7 @@
       "date": "2026-10-04"
     },
     "updated": "2026-10-06",
-    "stars": 445,
+    "stars": 447,
     "archived": false
   },
   {
@@ -184,7 +184,7 @@
     },
     "pre": null,
     "updated": "2026-09-29",
-    "stars": 444,
+    "stars": 445,
     "archived": false
   },
   {
@@ -199,7 +199,7 @@
     },
     "pre": null,
     "updated": "2026-09-27",
-    "stars": 169,
+    "stars": 170,
     "archived": false
   },
   {
@@ -214,7 +214,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
-    "stars": 771,
+    "stars": 772,
     "archived": false
   },
   {
@@ -229,7 +229,7 @@
     },
     "pre": null,
     "updated": "2026-08-21",
-    "stars": 236,
+    "stars": 238,
     "archived": false
   },
   {
@@ -244,7 +244,7 @@
       "date": "2026-10-06"
     },
     "updated": "2026-10-06",
-    "stars": 5709,
+    "stars": 5732,
     "archived": false
   },
   {
@@ -259,7 +259,7 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 207,
+    "stars": 209,
     "archived": false
   },
   {
@@ -333,7 +333,7 @@
       "date": "2026-10-06"
     },
     "updated": "2026-10-06",
-    "stars": 523,
+    "stars": 524,
     "archived": false
   },
   {
@@ -408,7 +408,7 @@
     },
     "pre": null,
     "updated": "2026-10-06",
-    "stars": 352,
+    "stars": 353,
     "archived": false
   },
   {
@@ -417,12 +417,12 @@
     "description": "Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play and stream to it with Moonlight/Sunshine (unofficial)",
     "category": "Network",
     "stable": {
-      "tag": "v0.6.0",
-      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/tag/v0.6.0",
-      "date": "2026-10-05"
+      "tag": "v0.7.0",
+      "url": "https://github.com/holdmysocks/ps5-tailscale/releases/tag/v0.7.0",
+      "date": "2026-10-06"
     },
     "pre": null,
-    "updated": "2026-10-05",
+    "updated": "2026-10-06",
     "stars": 40,
     "archived": false
   },
@@ -487,7 +487,7 @@
       "date": "2026-10-06"
     },
     "updated": "2026-10-06",
-    "stars": 81,
+    "stars": 83,
     "archived": false
   },
   {
@@ -518,6 +518,25 @@
     "pre": null,
     "updated": "2026-09-19",
     "stars": 47,
+    "archived": false
+  },
+  {
+    "name": "PSFlycast",
+    "url": "https://github.com/Press5elect/PSFlycast",
+    "description": "Flycast is a multiplatform Sega Dreamcast, Naomi, Naomi 2 and Atomiswave emulator",
+    "category": "Emulator",
+    "stable": {
+      "tag": "v1.0.2",
+      "url": "https://github.com/Press5elect/PSFlycast/releases/tag/v1.0.2",
+      "date": "2026-10-06"
+    },
+    "pre": {
+      "tag": "v1.1.0-rc1",
+      "url": "https://github.com/Press5elect/PSFlycast/releases/tag/v1.1.0-rc1",
+      "date": "2026-10-06"
+    },
+    "updated": "2026-10-06",
+    "stars": 8,
     "archived": false
   }
 ]
