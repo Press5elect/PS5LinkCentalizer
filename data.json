@@ -30,7 +30,7 @@
       "date": "2026-10-03"
     },
     "updated": "2026-10-03",
-    "stars": 340,
+    "stars": 344,
     "archived": false
   },
   {
@@ -44,8 +44,8 @@
       "url": "https://github.com/blackbearreloaded/ProsperoEden/releases/tag/v1.000.070",
       "date": "2026-10-04"
     },
-    "updated": "2026-10-05",
-    "stars": 414,
+    "updated": "2026-10-06",
+    "stars": 445,
     "archived": false
   },
   {
@@ -64,7 +64,7 @@
       "date": "2026-10-03"
     },
     "updated": "2026-10-06",
-    "stars": 100,
+    "stars": 101,
     "archived": false
   },
   {
@@ -79,7 +79,7 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 31,
+    "stars": 33,
     "archived": false
   },
   {
@@ -94,7 +94,7 @@
     },
     "pre": null,
     "updated": "2026-10-03",
-    "stars": 31,
+    "stars": 32,
     "archived": false
   },
   {
@@ -109,7 +109,7 @@
     },
     "pre": null,
     "updated": "2026-08-04",
-    "stars": 342,
+    "stars": 345,
     "archived": false
   },
   {
@@ -124,7 +124,7 @@
       "date": "2026-10-03"
     },
     "updated": "2026-10-04",
-    "stars": 738,
+    "stars": 750,
     "archived": false
   },
   {
@@ -139,7 +139,7 @@
     },
     "pre": null,
     "updated": "2026-09-23",
-    "stars": 613,
+    "stars": 617,
     "archived": false
   },
   {
@@ -169,7 +169,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
-    "stars": 63,
+    "stars": 65,
     "archived": false
   },
   {
@@ -184,7 +184,7 @@
     },
     "pre": null,
     "updated": "2026-09-29",
-    "stars": 443,
+    "stars": 444,
     "archived": false
   },
   {
@@ -199,7 +199,7 @@
     },
     "pre": null,
     "updated": "2026-09-27",
-    "stars": 168,
+    "stars": 169,
     "archived": false
   },
   {
@@ -214,7 +214,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
-    "stars": 760,
+    "stars": 771,
     "archived": false
   },
   {
@@ -229,7 +229,7 @@
     },
     "pre": null,
     "updated": "2026-08-21",
-    "stars": 234,
+    "stars": 236,
     "archived": false
   },
   {
@@ -239,12 +239,12 @@
     "category": "Emulator",
     "stable": null,
     "pre": {
-      "tag": "KytyPS5-2026-10-06-7d2422a",
-      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-06-7d2422a",
+      "tag": "KytyPS5-2026-10-06-fb7ff7e",
+      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-06-fb7ff7e",
       "date": "2026-10-06"
     },
     "updated": "2026-10-06",
-    "stars": 5539,
+    "stars": 5709,
     "archived": false
   },
   {
@@ -259,7 +259,7 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 191,
+    "stars": 207,
     "archived": false
   },
   {
@@ -269,7 +269,7 @@
     "category": "Dev",
     "pre": null,
     "updated": "2026-09-29",
-    "stars": 19,
+    "stars": 20,
     "archived": false
   },
   {
@@ -284,7 +284,7 @@
     },
     "pre": null,
     "updated": "2026-09-28",
-    "stars": 129,
+    "stars": 130,
     "archived": false
   },
   {
@@ -299,7 +299,7 @@
     },
     "pre": null,
     "updated": "2026-10-02",
-    "stars": 78,
+    "stars": 80,
     "archived": false
   },
   {
@@ -314,7 +314,7 @@
     },
     "pre": null,
     "updated": "2026-09-30",
-    "stars": 258,
+    "stars": 263,
     "archived": false
   },
   {
@@ -327,9 +327,13 @@
       "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.1.2",
       "date": "2026-10-06"
     },
-    "pre": null,
+    "pre": {
+      "tag": "v6.2.1",
+      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.2.1",
+      "date": "2026-10-06"
+    },
     "updated": "2026-10-06",
-    "stars": 516,
+    "stars": 523,
     "archived": false
   },
   {
@@ -404,7 +408,7 @@
     },
     "pre": null,
     "updated": "2026-10-06",
-    "stars": 332,
+    "stars": 352,
     "archived": false
   },
   {
@@ -419,7 +423,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
-    "stars": 39,
+    "stars": 40,
     "archived": false
   },
   {
@@ -434,7 +438,7 @@
     },
     "pre": null,
     "updated": "2026-10-06",
-    "stars": 235,
+    "stars": 246,
     "archived": false
   },
   {
@@ -468,7 +472,7 @@
       "date": "2026-09-08"
     },
     "updated": "2026-09-08",
-    "stars": 113,
+    "stars": 114,
     "archived": false
   },
   {
@@ -483,7 +487,7 @@
       "date": "2026-10-06"
     },
     "updated": "2026-10-06",
-    "stars": 72,
+    "stars": 81,
     "archived": false
   },
   {
@@ -498,7 +502,7 @@
     },
     "pre": null,
     "updated": "2026-08-05",
-    "stars": 8,
+    "stars": 9,
     "archived": false
   },
   {
@@ -513,7 +517,7 @@
     },
     "pre": null,
     "updated": "2026-09-19",
-    "stars": 46,
+    "stars": 47,
     "archived": false
   }
 ]
