@@ -9,7 +9,7 @@
   { "repo": "drakmor/ShadowMountPlus",           "category": "Payload" },
   { "repo": "EchoStretch/kstuff-lite",           "category": "HEN" },
   { "repo": "EchoStretch/ps5-app-dumper",        "category": "Payload" },
-  { "repo": "GronedWaffel/etahen-13.60",         "category": "HEN" },
+  { "repo": "GronedWaffel/etahen-13.60",         "category": "HEN (Unnoficial)" },
   { "repo": "itsPLK/ps5-payload-manager",        "category": "Payload" },
   { "repo": "itsPLK/ps5-pkg-manager",            "category": "Homebrew" },
   { "repo": "itsPLK/ps5-webkit-autoloader",      "category": "Exploit" },
@@ -32,5 +32,7 @@
   { "repo": "illusionyy/ps-patch-system",        "category": "Homebrew" },
   { "repo": "blackbearreloaded/ProsperoStore",   "category": "Homebrew" },
   { "repo": "drakmor/fetchpkg-gui",              "category": "Homebrew" }
-  { "repo": "Press5Elect/PSFlycast",             "category": "Emulator" }
+  { "repo": "Press5elect/PSFlyCast",             "category": "Emulator" }
+  { "repo": "drakmor/fetchpkg-gui",              "category": "Homebrew" },
+  { "repo": "MangoScango/ps5-account-tools",     "category": "PC Tool" }
 ]

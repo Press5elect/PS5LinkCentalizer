@@ -11,7 +11,7 @@
     },
     "pre": null,
     "updated": "2026-05-25",
-    "stars": 61,
+    "stars": 60,
     "archived": false
   },
   {
@@ -30,7 +30,7 @@
       "date": "2026-10-03"
     },
     "updated": "2026-10-03",
-    "stars": 337,
+    "stars": 340,
     "archived": false
   },
   {
@@ -45,7 +45,7 @@
       "date": "2026-10-04"
     },
     "updated": "2026-10-05",
-    "stars": 375,
+    "stars": 396,
     "archived": false
   },
   {
@@ -63,7 +63,7 @@
       "url": "https://github.com/blackbearreloaded/ProsperoLight/releases/tag/01.000.080",
       "date": "2026-10-03"
     },
-    "updated": "2026-10-05",
+    "updated": "2026-10-06",
     "stars": 99,
     "archived": false
   },
@@ -74,12 +74,12 @@
     "category": "Dev",
     "stable": null,
     "pre": {
-      "tag": "v0.1.0",
-      "url": "https://github.com/blackbearreloaded/ps5-fsr4/releases/tag/v0.1.0",
-      "date": "2026-09-29"
+      "tag": "v01.000.010",
+      "url": "https://github.com/blackbearreloaded/ps5-fsr4/releases/tag/v01.000.010",
+      "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 26,
+    "stars": 29,
     "archived": false
   },
   {
@@ -109,7 +109,7 @@
     },
     "pre": null,
     "updated": "2026-08-04",
-    "stars": 340,
+    "stars": 342,
     "archived": false
   },
   {
@@ -124,7 +124,7 @@
       "date": "2026-10-03"
     },
     "updated": "2026-10-04",
-    "stars": 729,
+    "stars": 735,
     "archived": false
   },
   {
@@ -139,7 +139,7 @@
     },
     "pre": null,
     "updated": "2026-09-23",
-    "stars": 606,
+    "stars": 610,
     "archived": false
   },
   {
@@ -158,22 +158,18 @@
     "archived": false
   },
   {
-    "name": "etahen-13.60",
-    "url": "https://github.com/GronedWaffel/etahen-13.60",
-    "description": "Unofficial etaHEN 2.5B source port for PS5 13.60. Original etaHEN by LightningMods and contributors.",
-    "category": "HEN",
+    "name": "etahen-11.00-13.60",
+    "url": "https://github.com/GronedWaffel/etahen-11.00-13.60",
+    "description": "Unofficial etaHEN 2.5B unified PS5 11.00-13.60 port: Toolbox, plugins and PS4/PS5 FPS. Original etaHEN by LightningMods and contributors.",
+    "category": "HEN (Unnoficial)",
     "stable": {
-      "tag": "v2.5B-13.60-r3",
-      "url": "https://github.com/GronedWaffel/etahen-13.60/releases/tag/v2.5B-13.60-r3",
-      "date": "2026-10-01"
+      "tag": "v2.5B-unified.1",
+      "url": "https://github.com/GronedWaffel/etahen-11.00-13.60/releases/tag/v2.5B-unified.1",
+      "date": "2026-10-05"
     },
-    "pre": {
-      "tag": "v2.5B-multifw-experimental.5",
-      "url": "https://github.com/GronedWaffel/etahen-13.60/releases/tag/v2.5B-multifw-experimental.5",
-      "date": "2026-10-04"
-    },
-    "updated": "2026-10-04",
-    "stars": 55,
+    "pre": null,
+    "updated": "2026-10-05",
+    "stars": 62,
     "archived": false
   },
   {
@@ -203,7 +199,7 @@
     },
     "pre": null,
     "updated": "2026-09-27",
-    "stars": 166,
+    "stars": 168,
     "archived": false
   },
   {
@@ -218,7 +214,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
-    "stars": 740,
+    "stars": 750,
     "archived": false
   },
   {
@@ -233,7 +229,7 @@
     },
     "pre": null,
     "updated": "2026-08-21",
-    "stars": 229,
+    "stars": 234,
     "archived": false
   },
   {
@@ -243,12 +239,12 @@
     "category": "Emulator",
     "stable": null,
     "pre": {
-      "tag": "KytyPS5-2026-10-05-af3011c",
-      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-05-af3011c",
+      "tag": "KytyPS5-2026-10-05-e6fce45",
+      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-05-e6fce45",
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 5300,
+    "stars": 5437,
     "archived": false
   },
   {
@@ -263,7 +259,7 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 109,
+    "stars": 173,
     "archived": false
   },
   {
@@ -273,7 +269,7 @@
     "category": "Dev",
     "pre": null,
     "updated": "2026-09-29",
-    "stars": 17,
+    "stars": 19,
     "archived": false
   },
   {
@@ -288,7 +284,7 @@
     },
     "pre": null,
     "updated": "2026-09-28",
-    "stars": 123,
+    "stars": 128,
     "archived": false
   },
   {
@@ -303,7 +299,7 @@
     },
     "pre": null,
     "updated": "2026-10-02",
-    "stars": 67,
+    "stars": 78,
     "archived": false
   },
   {
@@ -318,7 +314,7 @@
     },
     "pre": null,
     "updated": "2026-09-30",
-    "stars": 255,
+    "stars": 256,
     "archived": false
   },
   {
@@ -327,17 +323,13 @@
     "description": "PS5 Upload gets your games, apps and homebrew onto a jailbroken PS5 quickly and reliably: uploads resume after a dropped connection, installs pick the route that works, and you can browse files, manage the console and run cheats from your computer, phone or browser.",
     "category": "PC Tool",
     "stable": {
-      "tag": "v5.41.0",
-      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v5.41.0",
-      "date": "2026-10-01"
+      "tag": "v6.1.2",
+      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.1.2",
+      "date": "2026-10-06"
     },
-    "pre": {
-      "tag": "v6.0.0",
-      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.0.0",
-      "date": "2026-10-05"
-    },
-    "updated": "2026-10-05",
-    "stars": 488,
+    "pre": null,
+    "updated": "2026-10-06",
+    "stars": 508,
     "archived": false
   },
   {
@@ -382,7 +374,7 @@
     },
     "pre": null,
     "updated": "2026-09-12",
-    "stars": 25,
+    "stars": 26,
     "archived": false
   },
   {
@@ -406,13 +398,13 @@
     "description": "A port of PCSX2 for PS5",
     "category": "Emulator",
     "stable": {
-      "tag": "vk-285-128",
-      "url": "https://github.com/Swordpdf/PS5SX2/releases/tag/vk-285-128",
-      "date": "2026-10-04"
+      "tag": "vk-285-130",
+      "url": "https://github.com/Swordpdf/PS5SX2/releases/tag/vk-285-130",
+      "date": "2026-10-05"
     },
     "pre": null,
-    "updated": "2026-10-04",
-    "stars": 295,
+    "updated": "2026-10-05",
+    "stars": 319,
     "archived": false
   },
   {
@@ -427,7 +419,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
-    "stars": 29,
+    "stars": 38,
     "archived": false
   },
   {
@@ -441,8 +433,8 @@
       "date": "2026-10-04"
     },
     "pre": null,
-    "updated": "2026-10-04",
-    "stars": 170,
+    "updated": "2026-10-06",
+    "stars": 219,
     "archived": false
   },
   {
@@ -457,7 +449,7 @@
       "date": "2026-09-30"
     },
     "updated": "2026-09-30",
-    "stars": 90,
+    "stars": 91,
     "archived": false
   },
   {
@@ -486,12 +478,12 @@
     "category": "Homebrew",
     "stable": null,
     "pre": {
-      "tag": "v1.000.000",
-      "url": "https://github.com/blackbearreloaded/ProsperoStore/releases/tag/v1.000.000",
-      "date": "2026-10-05"
+      "tag": "v1.000.030",
+      "url": "https://github.com/blackbearreloaded/ProsperoStore/releases/tag/v1.000.030",
+      "date": "2026-10-06"
     },
-    "updated": "2026-10-05",
-    "stars": 44,
+    "updated": "2026-10-06",
+    "stars": 57,
     "archived": false
   },
   {
@@ -506,7 +498,22 @@
     },
     "pre": null,
     "updated": "2026-08-05",
-    "stars": 5,
+    "stars": 8,
+    "archived": false
+  },
+  {
+    "name": "ps5-account-tools",
+    "url": "https://github.com/MangoScango/ps5-account-tools",
+    "description": "",
+    "category": "PC Tool",
+    "stable": {
+      "tag": "v1.2",
+      "url": "https://github.com/MangoScango/ps5-account-tools/releases/tag/v1.2",
+      "date": "2026-09-19"
+    },
+    "pre": null,
+    "updated": "2026-09-19",
+    "stars": 44,
     "archived": false
   }
 ]
