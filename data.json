@@ -30,7 +30,7 @@
       "date": "2026-10-03"
     },
     "updated": "2026-10-03",
-    "stars": 339,
+    "stars": 338,
     "archived": false
   },
   {
@@ -45,7 +45,7 @@
       "date": "2026-10-04"
     },
     "updated": "2026-10-05",
-    "stars": 388,
+    "stars": 392,
     "archived": false
   },
   {
@@ -79,7 +79,7 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 26,
+    "stars": 27,
     "archived": false
   },
   {
@@ -169,7 +169,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
-    "stars": 60,
+    "stars": 62,
     "archived": false
   },
   {
@@ -184,7 +184,7 @@
     },
     "pre": null,
     "updated": "2026-09-29",
-    "stars": 442,
+    "stars": 443,
     "archived": false
   },
   {
@@ -229,7 +229,7 @@
     },
     "pre": null,
     "updated": "2026-08-21",
-    "stars": 233,
+    "stars": 234,
     "archived": false
   },
   {
@@ -244,7 +244,7 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 5401,
+    "stars": 5417,
     "archived": false
   },
   {
@@ -259,7 +259,7 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 160,
+    "stars": 167,
     "archived": false
   },
   {
@@ -269,7 +269,7 @@
     "category": "Dev",
     "pre": null,
     "updated": "2026-09-29",
-    "stars": 18,
+    "stars": 19,
     "archived": false
   },
   {
@@ -299,7 +299,7 @@
     },
     "pre": null,
     "updated": "2026-10-02",
-    "stars": 75,
+    "stars": 76,
     "archived": false
   },
   {
@@ -323,13 +323,13 @@
     "description": "PS5 Upload gets your games, apps and homebrew onto a jailbroken PS5 quickly and reliably: uploads resume after a dropped connection, installs pick the route that works, and you can browse files, manage the console and run cheats from your computer, phone or browser.",
     "category": "PC Tool",
     "stable": {
-      "tag": "v6.1.0",
-      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.1.0",
+      "tag": "v6.1.1",
+      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.1.1",
       "date": "2026-10-05"
     },
     "pre": null,
-    "updated": "2026-10-05",
-    "stars": 499,
+    "updated": "2026-10-06",
+    "stars": 503,
     "archived": false
   },
   {
@@ -404,7 +404,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
-    "stars": 309,
+    "stars": 316,
     "archived": false
   },
   {
@@ -419,7 +419,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
-    "stars": 33,
+    "stars": 38,
     "archived": false
   },
   {
@@ -433,8 +433,8 @@
       "date": "2026-10-04"
     },
     "pre": null,
-    "updated": "2026-10-05",
-    "stars": 210,
+    "updated": "2026-10-06",
+    "stars": 216,
     "archived": false
   },
   {
@@ -499,6 +499,21 @@
     "pre": null,
     "updated": "2026-08-05",
     "stars": 5,
+    "archived": false
+  },
+  {
+    "name": "ps5-account-tools",
+    "url": "https://github.com/MangoScango/ps5-account-tools",
+    "description": "",
+    "category": "PC Tool",
+    "stable": {
+      "tag": "v1.2",
+      "url": "https://github.com/MangoScango/ps5-account-tools/releases/tag/v1.2",
+      "date": "2026-09-19"
+    },
+    "pre": null,
+    "updated": "2026-09-19",
+    "stars": 43,
     "archived": false
   }
 ]
