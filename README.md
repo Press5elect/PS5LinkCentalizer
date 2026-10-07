@@ -16,7 +16,7 @@ Don't edit `data.json` or `offline.json`, they are generated automatically.
 
 ## How it works
 
-- `.github/workflows/update.yml` runs every 6h (and when `projects.json` changes), fetches the latest stable version and the latest beta/pre-release (if newer) of each repo, and commits `data.json`.
+- `.github/workflows/update.yml` runs every 3h (and when `projects.json` changes), fetches the latest stable version and the latest beta/pre-release (if newer) of each repo, and commits `data.json`.
 - Pre-release = flagged as such on GitHub **or** tag containing `alpha`, `beta`, `rc`, `nightly`, `dev`, `pre`, `test`, `experimental`, or a trailing commit hash.
 - Repos without releases: uses tags (`git ls-remote`), sorted by version.
 - Dead repos (404): the PR check fails. On the scheduled run they are moved from `projects.json` to `offline.json`, keeping their last known info, and listed on `offline.html`. Every run also re-checks `offline.json`: a repo that is reachable again goes back to `projects.json` with its category.
