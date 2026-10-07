@@ -25,12 +25,12 @@
       "date": "2026-09-11"
     },
     "pre": {
-      "tag": "v0.9.0-beta1",
-      "url": "https://github.com/aydencharles/onionHEN/releases/tag/v0.9.0-beta1",
-      "date": "2026-10-03"
+      "tag": "v0.9.0-beta2",
+      "url": "https://github.com/aydencharles/onionHEN/releases/tag/v0.9.0-beta2",
+      "date": "2026-10-07"
     },
-    "updated": "2026-10-03",
-    "stars": 349,
+    "updated": "2026-10-07",
+    "stars": 352,
     "archived": false
   },
   {
@@ -45,7 +45,7 @@
       "date": "2026-10-07"
     },
     "updated": "2026-10-07",
-    "stars": 469,
+    "stars": 488,
     "archived": false
   },
   {
@@ -64,7 +64,7 @@
       "date": "2026-10-07"
     },
     "updated": "2026-10-07",
-    "stars": 104,
+    "stars": 106,
     "archived": false
   },
   {
@@ -94,7 +94,7 @@
     },
     "pre": null,
     "updated": "2026-10-03",
-    "stars": 33,
+    "stars": 41,
     "archived": false
   },
   {
@@ -109,7 +109,7 @@
     },
     "pre": null,
     "updated": "2026-08-04",
-    "stars": 347,
+    "stars": 349,
     "archived": false
   },
   {
@@ -124,7 +124,7 @@
       "date": "2026-10-03"
     },
     "updated": "2026-10-04",
-    "stars": 762,
+    "stars": 770,
     "archived": false
   },
   {
@@ -139,7 +139,7 @@
     },
     "pre": null,
     "updated": "2026-09-23",
-    "stars": 625,
+    "stars": 628,
     "archived": false
   },
   {
@@ -184,7 +184,7 @@
     },
     "pre": null,
     "updated": "2026-09-29",
-    "stars": 450,
+    "stars": 452,
     "archived": false
   },
   {
@@ -212,9 +212,13 @@
       "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.5.2",
       "date": "2026-09-30"
     },
-    "pre": null,
-    "updated": "2026-10-05",
-    "stars": 791,
+    "pre": {
+      "tag": "v0.6.0-pre-4488577",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0-pre-4488577",
+      "date": "2026-10-07"
+    },
+    "updated": "2026-10-07",
+    "stars": 803,
     "archived": false
   },
   {
@@ -229,7 +233,7 @@
     },
     "pre": null,
     "updated": "2026-08-21",
-    "stars": 239,
+    "stars": 241,
     "archived": false
   },
   {
@@ -244,13 +248,13 @@
       "date": "2026-10-07"
     },
     "updated": "2026-10-07",
-    "stars": 5969,
+    "stars": 6166,
     "archived": false
   },
   {
     "name": "PS5_RetroArch",
     "url": "https://github.com/mihawk-99/PS5_RetroArch",
-    "description": "🎮 RetroArch Homebrew for the PS5 that supports 42 systems.",
+    "description": "🎮 RetroArch Homebrew for the PS5 that supports 32 cores & 42 systems.",
     "category": "Emulator",
     "stable": null,
     "pre": {
@@ -259,7 +263,7 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 219,
+    "stars": 226,
     "archived": false
   },
   {
@@ -284,7 +288,7 @@
     },
     "pre": null,
     "updated": "2026-09-28",
-    "stars": 135,
+    "stars": 136,
     "archived": false
   },
   {
@@ -299,7 +303,7 @@
     },
     "pre": null,
     "updated": "2026-10-02",
-    "stars": 83,
+    "stars": 85,
     "archived": false
   },
   {
@@ -314,7 +318,7 @@
     },
     "pre": null,
     "updated": "2026-09-30",
-    "stars": 269,
+    "stars": 281,
     "archived": false
   },
   {
@@ -323,17 +327,17 @@
     "description": "PS5 Upload gets your games, apps and homebrew onto a jailbroken PS5 quickly and reliably: uploads resume after a dropped connection, installs pick the route that works, and you can browse files, manage the console and run cheats from your computer, phone or browser.",
     "category": "PC Tool",
     "stable": {
-      "tag": "v6.2.3",
-      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.2.3",
+      "tag": "v6.3.1",
+      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.3.1",
       "date": "2026-10-07"
     },
     "pre": {
-      "tag": "v6.3.0",
-      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.3.0",
+      "tag": "v6.2.2",
+      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.2.2",
       "date": "2026-10-07"
     },
     "updated": "2026-10-07",
-    "stars": 540,
+    "stars": 548,
     "archived": false
   },
   {
@@ -363,7 +367,7 @@
     },
     "pre": null,
     "updated": "2026-07-17",
-    "stars": 8,
+    "stars": 9,
     "archived": false
   },
   {
@@ -408,7 +412,7 @@
     },
     "pre": null,
     "updated": "2026-10-06",
-    "stars": 370,
+    "stars": 381,
     "archived": false
   },
   {
@@ -438,7 +442,7 @@
     },
     "pre": null,
     "updated": "2026-10-07",
-    "stars": 254,
+    "stars": 260,
     "archived": false
   },
   {
@@ -453,7 +457,7 @@
       "date": "2026-09-30"
     },
     "updated": "2026-09-30",
-    "stars": 94,
+    "stars": 96,
     "archived": false
   },
   {
@@ -483,7 +487,7 @@
       "date": "2026-10-07"
     },
     "updated": "2026-10-07",
-    "stars": 121,
+    "stars": 137,
     "archived": false
   },
   {
@@ -513,7 +517,7 @@
     },
     "pre": null,
     "updated": "2026-09-19",
-    "stars": 51,
+    "stars": 54,
     "archived": false
   },
   {
@@ -522,17 +526,13 @@
     "description": "Flycast is a multiplatform Sega Dreamcast, Naomi, Naomi 2 and Atomiswave emulator",
     "category": "Emulator",
     "stable": {
-      "tag": "v1.0.2",
-      "url": "https://github.com/Press5elect/PSFlycast/releases/tag/v1.0.2",
-      "date": "2026-10-06"
+      "tag": "v1.1.0",
+      "url": "https://github.com/Press5elect/PSFlycast/releases/tag/v1.1.0",
+      "date": "2026-10-07"
     },
-    "pre": {
-      "tag": "v1.1.0-rc1",
-      "url": "https://github.com/Press5elect/PSFlycast/releases/tag/v1.1.0-rc1",
-      "date": "2026-10-06"
-    },
-    "updated": "2026-10-06",
-    "stars": 9,
+    "pre": null,
+    "updated": "2026-10-07",
+    "stars": 11,
     "archived": false
   },
   {
@@ -562,7 +562,7 @@
     },
     "pre": null,
     "updated": "2026-10-07",
-    "stars": 103,
+    "stars": 107,
     "archived": false
   }
 ]
