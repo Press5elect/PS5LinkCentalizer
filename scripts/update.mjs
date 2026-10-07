@@ -52,6 +52,16 @@ const key = r => r.toLowerCase();
 const out = [];
 const dead = [];
 
+// Offline repos that are reachable again go back to projects.json (and are processed below)
+const revived = [];
+for (const o of offline) {
+  if (projects.some(p => key(p.repo) === key(o.repo))) continue; // re-added by hand
+  if (!(await gh(`/repos/${o.repo}`))) continue;
+  console.log(`back online: ${o.repo}`);
+  revived.push(o.repo);
+  projects.push({ repo: o.repo, ...(o.category && { category: o.category }) });
+}
+
 for (const p of projects) {
   if (!/^[\w.-]+\/[\w.-]+$/.test(p.repo ?? "")) throw new Error(`invalid repo: ${JSON.stringify(p)}`);
   const repo = await gh(`/repos/${p.repo}`);
@@ -98,6 +108,8 @@ if (dead.length) {
       offlineSince: today,
     });
   }
+}
+if (dead.length || revived.length) {
   // One entry per line, same layout as the hand-edited file
   const kept = projects.filter(p => !dead.includes(p.repo));
   const w = Math.max(...kept.map(p => p.repo.length));
