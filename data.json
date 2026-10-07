@@ -30,7 +30,7 @@
       "date": "2026-10-03"
     },
     "updated": "2026-10-03",
-    "stars": 345,
+    "stars": 347,
     "archived": false
   },
   {
@@ -40,12 +40,12 @@
     "category": "Emulator",
     "stable": null,
     "pre": {
-      "tag": "v1.000.070",
-      "url": "https://github.com/blackbearreloaded/ProsperoEden/releases/tag/v1.000.070",
-      "date": "2026-10-04"
+      "tag": "v1.000.080",
+      "url": "https://github.com/blackbearreloaded/ProsperoEden/releases/tag/v1.000.080",
+      "date": "2026-10-07"
     },
     "updated": "2026-10-07",
-    "stars": 452,
+    "stars": 455,
     "archived": false
   },
   {
@@ -59,9 +59,9 @@
       "date": "2026-09-10"
     },
     "pre": {
-      "tag": "01.000.080",
-      "url": "https://github.com/blackbearreloaded/ProsperoLight/releases/tag/01.000.080",
-      "date": "2026-10-03"
+      "tag": "01.000.090",
+      "url": "https://github.com/blackbearreloaded/ProsperoLight/releases/tag/01.000.090",
+      "date": "2026-10-07"
     },
     "updated": "2026-10-07",
     "stars": 101,
@@ -124,7 +124,7 @@
       "date": "2026-10-03"
     },
     "updated": "2026-10-04",
-    "stars": 755,
+    "stars": 756,
     "archived": false
   },
   {
@@ -139,7 +139,7 @@
     },
     "pre": null,
     "updated": "2026-09-23",
-    "stars": 619,
+    "stars": 622,
     "archived": false
   },
   {
@@ -184,7 +184,7 @@
     },
     "pre": null,
     "updated": "2026-09-29",
-    "stars": 446,
+    "stars": 448,
     "archived": false
   },
   {
@@ -214,7 +214,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
-    "stars": 777,
+    "stars": 778,
     "archived": false
   },
   {
@@ -244,7 +244,7 @@
       "date": "2026-10-07"
     },
     "updated": "2026-10-07",
-    "stars": 5776,
+    "stars": 5783,
     "archived": false
   },
   {
@@ -333,7 +333,7 @@
       "date": "2026-10-06"
     },
     "updated": "2026-10-06",
-    "stars": 527,
+    "stars": 528,
     "archived": false
   },
   {
@@ -408,7 +408,7 @@
     },
     "pre": null,
     "updated": "2026-10-06",
-    "stars": 358,
+    "stars": 360,
     "archived": false
   },
   {
@@ -483,7 +483,7 @@
       "date": "2026-10-07"
     },
     "updated": "2026-10-07",
-    "stars": 96,
+    "stars": 99,
     "archived": false
   },
   {
