@@ -34,5 +34,6 @@
   { "repo": "drakmor/fetchpkg-gui",              "category": "Homebrew" },
   { "repo": "MangoScango/ps5-account-tools",     "category": "PC Tool" },
   { "repo": "Press5elect/PSFlycast",             "category": "Emulator" },
-  { "repo": "elripalda/psgfx",                   "category": "Customization" }
+  { "repo": "elripalda/psgfx",                   "category": "Customization" },
+  { "repo": "elripalda/Porpoise-Dolphin-Emulator-for-PS5", "category": "Emulator" }
 ]
