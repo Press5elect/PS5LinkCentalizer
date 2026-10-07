@@ -63,7 +63,7 @@
       "url": "https://github.com/blackbearreloaded/ProsperoLight/releases/tag/01.000.080",
       "date": "2026-10-03"
     },
-    "updated": "2026-10-06",
+    "updated": "2026-10-07",
     "stars": 101,
     "archived": false
   },
@@ -94,7 +94,7 @@
     },
     "pre": null,
     "updated": "2026-10-03",
-    "stars": 32,
+    "stars": 33,
     "archived": false
   },
   {
@@ -154,7 +154,7 @@
     },
     "pre": null,
     "updated": "2026-10-03",
-    "stars": 147,
+    "stars": 146,
     "archived": false
   },
   {
@@ -214,7 +214,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
-    "stars": 776,
+    "stars": 777,
     "archived": false
   },
   {
@@ -244,7 +244,7 @@
       "date": "2026-10-07"
     },
     "updated": "2026-10-07",
-    "stars": 5767,
+    "stars": 5776,
     "archived": false
   },
   {
@@ -259,7 +259,7 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 215,
+    "stars": 216,
     "archived": false
   },
   {
@@ -284,7 +284,7 @@
     },
     "pre": null,
     "updated": "2026-09-28",
-    "stars": 132,
+    "stars": 133,
     "archived": false
   },
   {
@@ -548,6 +548,25 @@
     "pre": null,
     "updated": "2026-10-03",
     "stars": 34,
+    "archived": false
+  },
+  {
+    "name": "Porpoise-Dolphin-Emulator-for-PS5",
+    "url": "https://github.com/elripalda/Porpoise-Dolphin-Emulator-for-PS5",
+    "description": "A native GameCube and Wii emulator for jailbroken PS5, powered by Dolphin. Cover-flow library, box art, memory cards, original music.",
+    "category": "Emulator",
+    "stable": {
+      "tag": "v2.1.1",
+      "url": "https://github.com/elripalda/Porpoise-Dolphin-Emulator-for-PS5/releases/tag/v2.1.1",
+      "date": "2026-10-06"
+    },
+    "pre": {
+      "tag": "v2.5-beta.1",
+      "url": "https://github.com/elripalda/Porpoise-Dolphin-Emulator-for-PS5/releases/tag/v2.5-beta.1",
+      "date": "2026-10-06"
+    },
+    "updated": "2026-10-06",
+    "stars": 100,
     "archived": false
   }
 ]
