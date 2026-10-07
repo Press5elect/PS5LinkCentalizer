@@ -33,5 +33,6 @@
   { "repo": "blackbearreloaded/ProsperoStore",   "category": "Homebrew" },
   { "repo": "drakmor/fetchpkg-gui",              "category": "Homebrew" },
   { "repo": "MangoScango/ps5-account-tools",     "category": "PC Tool" },
-  { "repo": "Press5elect/PSFlycast",             "category": "Emulator" }
+  { "repo": "Press5elect/PSFlycast",             "category": "Emulator" },
+  { "repo": "elripalda/psgfx",                   "category": "Customization" }
 ]
