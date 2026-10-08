@@ -30,7 +30,7 @@
       "date": "2026-10-07"
     },
     "updated": "2026-10-07",
-    "stars": 356,
+    "stars": 358,
     "archived": false
   },
   {
@@ -44,8 +44,8 @@
       "url": "https://github.com/blackbearreloaded/ProsperoEden/releases/tag/v1.000.080",
       "date": "2026-10-07"
     },
-    "updated": "2026-10-07",
-    "stars": 493,
+    "updated": "2026-10-08",
+    "stars": 500,
     "archived": false
   },
   {
@@ -63,7 +63,7 @@
       "url": "https://github.com/blackbearreloaded/ProsperoLight/releases/tag/01.000.090",
       "date": "2026-10-07"
     },
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "stars": 105,
     "archived": false
   },
@@ -78,8 +78,8 @@
       "url": "https://github.com/blackbearreloaded/ps5-fsr4/releases/tag/v01.000.010",
       "date": "2026-10-05"
     },
-    "updated": "2026-10-05",
-    "stars": 32,
+    "updated": "2026-10-08",
+    "stars": 33,
     "archived": false
   },
   {
@@ -88,13 +88,13 @@
     "description": "Reference for building polished, console-grade PS5 homebrew interfaces with OpenGL",
     "category": "Dev",
     "stable": {
-      "tag": "01.000.000",
-      "url": "https://github.com/blackbearreloaded/ps5-homebrew-ui/releases/tag/01.000.000",
-      "date": "2026-10-03"
+      "tag": "01.000.010",
+      "url": "https://github.com/blackbearreloaded/ps5-homebrew-ui/releases/tag/01.000.010",
+      "date": "2026-10-08"
     },
     "pre": null,
-    "updated": "2026-10-03",
-    "stars": 43,
+    "updated": "2026-10-08",
+    "stars": 44,
     "archived": false
   },
   {
@@ -124,7 +124,7 @@
       "date": "2026-10-03"
     },
     "updated": "2026-10-04",
-    "stars": 774,
+    "stars": 777,
     "archived": false
   },
   {
@@ -139,7 +139,7 @@
     },
     "pre": null,
     "updated": "2026-09-23",
-    "stars": 630,
+    "stars": 631,
     "archived": false
   },
   {
@@ -184,7 +184,7 @@
     },
     "pre": null,
     "updated": "2026-09-29",
-    "stars": 452,
+    "stars": 453,
     "archived": false
   },
   {
@@ -218,7 +218,7 @@
       "date": "2026-10-07"
     },
     "updated": "2026-10-07",
-    "stars": 809,
+    "stars": 814,
     "archived": false
   },
   {
@@ -243,12 +243,12 @@
     "category": "Emulator",
     "stable": null,
     "pre": {
-      "tag": "KytyPS5-2026-10-07-e7cfe5a",
-      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-07-e7cfe5a",
-      "date": "2026-10-07"
+      "tag": "KytyPS5-2026-10-08-5a88080",
+      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-08-5a88080",
+      "date": "2026-10-08"
     },
-    "updated": "2026-10-07",
-    "stars": 6217,
+    "updated": "2026-10-08",
+    "stars": 6245,
     "archived": false
   },
   {
@@ -263,7 +263,7 @@
       "date": "2026-10-05"
     },
     "updated": "2026-10-05",
-    "stars": 226,
+    "stars": 227,
     "archived": false
   },
   {
@@ -318,7 +318,7 @@
     },
     "pre": null,
     "updated": "2026-09-30",
-    "stars": 286,
+    "stars": 287,
     "archived": false
   },
   {
@@ -327,17 +327,13 @@
     "description": "PS5 Upload gets your games, apps and homebrew onto a jailbroken PS5 quickly and reliably: uploads resume after a dropped connection, installs pick the route that works, and you can browse files, manage the console and run cheats from your computer, phone or browser.",
     "category": "PC Tool",
     "stable": {
-      "tag": "v6.3.1",
-      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.3.1",
-      "date": "2026-10-07"
+      "tag": "v6.4.0",
+      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.4.0",
+      "date": "2026-10-08"
     },
-    "pre": {
-      "tag": "v6.2.2",
-      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.2.2",
-      "date": "2026-10-07"
-    },
-    "updated": "2026-10-07",
-    "stars": 552,
+    "pre": null,
+    "updated": "2026-10-08",
+    "stars": 553,
     "archived": false
   },
   {
@@ -412,7 +408,7 @@
     },
     "pre": null,
     "updated": "2026-10-06",
-    "stars": 387,
+    "stars": 390,
     "archived": false
   },
   {
@@ -442,7 +438,7 @@
     },
     "pre": null,
     "updated": "2026-10-07",
-    "stars": 261,
+    "stars": 263,
     "archived": false
   },
   {
@@ -487,7 +483,7 @@
       "date": "2026-10-07"
     },
     "updated": "2026-10-08",
-    "stars": 139,
+    "stars": 140,
     "archived": false
   },
   {
@@ -532,7 +528,7 @@
     },
     "pre": null,
     "updated": "2026-10-07",
-    "stars": 11,
+    "stars": 12,
     "archived": false
   },
   {
@@ -562,7 +558,22 @@
     },
     "pre": null,
     "updated": "2026-10-07",
-    "stars": 108,
+    "stars": 109,
+    "archived": false
+  },
+  {
+    "name": "orbit-store-ps5",
+    "url": "https://github.com/saawant12/orbit-store-ps5",
+    "description": "A modern PS5 download manager with resumable downloads and phone controls",
+    "category": "Emulator",
+    "stable": {
+      "tag": "v0.9.0",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/tag/v0.9.0",
+      "date": "2026-10-07"
+    },
+    "pre": null,
+    "updated": "2026-10-07",
+    "stars": 441,
     "archived": false
   }
 ]
