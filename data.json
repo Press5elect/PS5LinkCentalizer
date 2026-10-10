@@ -45,7 +45,7 @@
       "date": "2026-10-10"
     },
     "updated": "2026-10-10",
-    "stars": 553,
+    "stars": 558,
     "archived": false
   },
   {
@@ -128,7 +128,7 @@
       "date": "2026-10-10"
     },
     "updated": "2026-10-10",
-    "stars": 822,
+    "stars": 832,
     "archived": false
   },
   {
@@ -143,7 +143,7 @@
     },
     "pre": null,
     "updated": "2026-09-23",
-    "stars": 669,
+    "stars": 673,
     "archived": false
   },
   {
@@ -173,7 +173,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
-    "stars": 71,
+    "stars": 72,
     "archived": false
   },
   {
@@ -218,7 +218,7 @@
     },
     "pre": null,
     "updated": "2026-10-08",
-    "stars": 913,
+    "stars": 918,
     "archived": false
   },
   {
@@ -243,12 +243,12 @@
     "category": "Emulator",
     "stable": null,
     "pre": {
-      "tag": "KytyPS5-2026-10-10-f3836bb",
-      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-10-f3836bb",
+      "tag": "KytyPS5-2026-10-10-f63d3be",
+      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-10-f63d3be",
       "date": "2026-10-10"
     },
     "updated": "2026-10-10",
-    "stars": 7204,
+    "stars": 7261,
     "archived": false
   },
   {
@@ -263,7 +263,7 @@
       "date": "2026-10-08"
     },
     "updated": "2026-10-10",
-    "stars": 271,
+    "stars": 274,
     "archived": false
   },
   {
@@ -303,7 +303,7 @@
     },
     "pre": null,
     "updated": "2026-10-02",
-    "stars": 106,
+    "stars": 107,
     "archived": false
   },
   {
@@ -318,7 +318,7 @@
     },
     "pre": null,
     "updated": "2026-10-09",
-    "stars": 327,
+    "stars": 333,
     "archived": false
   },
   {
@@ -327,8 +327,8 @@
     "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
     "category": "PC Tool",
     "stable": {
-      "tag": "v6.8.1",
-      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.8.1",
+      "tag": "v6.8.2",
+      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.8.2",
       "date": "2026-10-10"
     },
     "pre": {
@@ -337,7 +337,7 @@
       "date": "2026-10-10"
     },
     "updated": "2026-10-10",
-    "stars": 589,
+    "stars": 593,
     "archived": false
   },
   {
@@ -406,13 +406,13 @@
     "description": "A port of PCSX2 for PS5",
     "category": "Emulator",
     "stable": {
-      "tag": "vk-285-161",
-      "url": "https://github.com/Swordpdf/PS5SX2/releases/tag/vk-285-161",
+      "tag": "vk-285-162",
+      "url": "https://github.com/Swordpdf/PS5SX2/releases/tag/vk-285-162",
       "date": "2026-10-10"
     },
     "pre": null,
     "updated": "2026-10-10",
-    "stars": 671,
+    "stars": 701,
     "archived": false
   },
   {
@@ -491,7 +491,7 @@
       "date": "2026-10-08"
     },
     "updated": "2026-10-10",
-    "stars": 183,
+    "stars": 187,
     "archived": false
   },
   {
@@ -521,7 +521,7 @@
     },
     "pre": null,
     "updated": "2026-09-19",
-    "stars": 68,
+    "stars": 69,
     "archived": false
   },
   {
@@ -560,13 +560,13 @@
     "description": "A native GameCube and Wii emulator for jailbroken PS5, powered by Dolphin. Cover-flow library, box art, memory cards, original music.",
     "category": "Emulator",
     "stable": {
-      "tag": "v2.7",
-      "url": "https://github.com/elripalda/Porpoise-Dolphin-Emulator-for-PS5/releases/tag/v2.7",
-      "date": "2026-10-08"
+      "tag": "v3.0",
+      "url": "https://github.com/elripalda/Porpoise-Dolphin-Emulator-for-PS5/releases/tag/v3.0",
+      "date": "2026-10-10"
     },
     "pre": null,
-    "updated": "2026-10-08",
-    "stars": 123,
+    "updated": "2026-10-10",
+    "stars": 124,
     "archived": false
   },
   {
@@ -575,13 +575,13 @@
     "description": "A modern PS5 download manager with resumable downloads and phone controls",
     "category": "Emulator",
     "stable": {
-      "tag": "v1.0.5",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/tag/v1.0.5",
-      "date": "2026-10-09"
+      "tag": "v1.1.0",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/tag/v1.1.0",
+      "date": "2026-10-10"
     },
     "pre": null,
-    "updated": "2026-10-09",
-    "stars": 499,
+    "updated": "2026-10-10",
+    "stars": 505,
     "archived": false
   }
 ]
