@@ -34,6 +34,7 @@
   { "repo": "drakmor/fetchpkg-gui",              "category": "Homebrew" },
   { "repo": "MangoScango/ps5-account-tools",     "category": "PC Tool" },
   { "repo": "Press5elect/PSFlycast",             "category": "Emulator" },
+     { "repo": "Press5elect/PSSwanStation", "category": "Emulator", "name": "PSSwanStation", "description": "PS1 emulator for PS5, based on SwanStation, with its own frontend" },
   { "repo": "elripalda/psgfx",                   "category": "Customization" },
   { "repo": "elripalda/Porpoise-Dolphin-Emulator-for-PS5", "category": "Emulator" },
   { "repo": "saawant12/orbit-store-ps5",         "category": "Emulator" }
