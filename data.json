@@ -30,7 +30,7 @@
       "date": "2026-10-07"
     },
     "updated": "2026-10-07",
-    "stars": 376,
+    "stars": 379,
     "archived": false
   },
   {
@@ -40,12 +40,12 @@
     "category": "Emulator",
     "stable": null,
     "pre": {
-      "tag": "v1.000.095",
-      "url": "https://github.com/blackbearreloaded/ProsperoEden/releases/tag/v1.000.095",
-      "date": "2026-10-09"
+      "tag": "v1.000.100",
+      "url": "https://github.com/blackbearreloaded/ProsperoEden/releases/tag/v1.000.100",
+      "date": "2026-10-10"
     },
     "updated": "2026-10-10",
-    "stars": 532,
+    "stars": 542,
     "archived": false
   },
   {
@@ -63,7 +63,7 @@
       "url": "https://github.com/blackbearreloaded/ProsperoLight/releases/tag/01.000.090",
       "date": "2026-10-07"
     },
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "stars": 107,
     "archived": false
   },
@@ -109,7 +109,7 @@
     },
     "pre": null,
     "updated": "2026-08-04",
-    "stars": 360,
+    "stars": 365,
     "archived": false
   },
   {
@@ -124,7 +124,7 @@
       "date": "2026-10-03"
     },
     "updated": "2026-10-04",
-    "stars": 814,
+    "stars": 819,
     "archived": false
   },
   {
@@ -139,7 +139,7 @@
     },
     "pre": null,
     "updated": "2026-09-23",
-    "stars": 660,
+    "stars": 667,
     "archived": false
   },
   {
@@ -154,7 +154,7 @@
     },
     "pre": null,
     "updated": "2026-10-03",
-    "stars": 152,
+    "stars": 153,
     "archived": false
   },
   {
@@ -169,7 +169,7 @@
     },
     "pre": null,
     "updated": "2026-10-05",
-    "stars": 69,
+    "stars": 70,
     "archived": false
   },
   {
@@ -184,7 +184,7 @@
     },
     "pre": null,
     "updated": "2026-09-29",
-    "stars": 470,
+    "stars": 472,
     "archived": false
   },
   {
@@ -199,7 +199,7 @@
     },
     "pre": null,
     "updated": "2026-10-08",
-    "stars": 177,
+    "stars": 178,
     "archived": false
   },
   {
@@ -214,7 +214,7 @@
     },
     "pre": null,
     "updated": "2026-10-08",
-    "stars": 894,
+    "stars": 906,
     "archived": false
   },
   {
@@ -229,7 +229,7 @@
     },
     "pre": null,
     "updated": "2026-08-21",
-    "stars": 252,
+    "stars": 253,
     "archived": false
   },
   {
@@ -239,12 +239,12 @@
     "category": "Emulator",
     "stable": null,
     "pre": {
-      "tag": "KytyPS5-2026-10-09-c1926f9",
-      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-09-c1926f9",
-      "date": "2026-10-09"
+      "tag": "KytyPS5-2026-10-10-f3836bb",
+      "url": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-10-f3836bb",
+      "date": "2026-10-10"
     },
-    "updated": "2026-10-09",
-    "stars": 6975,
+    "updated": "2026-10-10",
+    "stars": 7094,
     "archived": false
   },
   {
@@ -258,8 +258,8 @@
       "url": "https://github.com/mihawk-99/PS5_RetroArch/releases/tag/v1.0.0-beta.1",
       "date": "2026-10-08"
     },
-    "updated": "2026-10-08",
-    "stars": 257,
+    "updated": "2026-10-10",
+    "stars": 263,
     "archived": false
   },
   {
@@ -299,7 +299,7 @@
     },
     "pre": null,
     "updated": "2026-10-02",
-    "stars": 98,
+    "stars": 103,
     "archived": false
   },
   {
@@ -314,7 +314,7 @@
     },
     "pre": null,
     "updated": "2026-10-09",
-    "stars": 313,
+    "stars": 319,
     "archived": false
   },
   {
@@ -323,17 +323,17 @@
     "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
     "category": "PC Tool",
     "stable": {
-      "tag": "v6.7.3",
-      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.7.3",
-      "date": "2026-10-09"
+      "tag": "v6.7.4",
+      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.7.4",
+      "date": "2026-10-10"
     },
     "pre": {
-      "tag": "v6.7.2",
-      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.7.2",
-      "date": "2026-10-09"
+      "tag": "v6.8.0",
+      "url": "https://github.com/phantomptr/ps5upload/releases/tag/v6.8.0",
+      "date": "2026-10-10"
     },
-    "updated": "2026-10-09",
-    "stars": 581,
+    "updated": "2026-10-10",
+    "stars": 583,
     "archived": false
   },
   {
@@ -408,7 +408,7 @@
     },
     "pre": null,
     "updated": "2026-10-09",
-    "stars": 572,
+    "stars": 611,
     "archived": false
   },
   {
@@ -423,7 +423,7 @@
     },
     "pre": null,
     "updated": "2026-10-06",
-    "stars": 42,
+    "stars": 43,
     "archived": false
   },
   {
@@ -437,8 +437,8 @@
       "date": "2026-10-08"
     },
     "pre": null,
-    "updated": "2026-10-09",
-    "stars": 279,
+    "updated": "2026-10-10",
+    "stars": 280,
     "archived": false
   },
   {
@@ -453,7 +453,7 @@
       "date": "2026-09-30"
     },
     "updated": "2026-09-30",
-    "stars": 97,
+    "stars": 99,
     "archived": false
   },
   {
@@ -466,9 +466,13 @@
       "url": "https://github.com/illusionyy/ps-patch-system/releases/tag/37549880588",
       "date": "2026-10-07"
     },
-    "pre": null,
-    "updated": "2026-10-07",
-    "stars": 120,
+    "pre": {
+      "tag": "38039691171",
+      "url": "https://github.com/illusionyy/ps-patch-system/releases/tag/38039691171",
+      "date": "2026-10-10"
+    },
+    "updated": "2026-10-10",
+    "stars": 121,
     "archived": false
   },
   {
@@ -483,7 +487,7 @@
       "date": "2026-10-08"
     },
     "updated": "2026-10-10",
-    "stars": 173,
+    "stars": 179,
     "archived": false
   },
   {
@@ -513,7 +517,7 @@
     },
     "pre": null,
     "updated": "2026-09-19",
-    "stars": 65,
+    "stars": 68,
     "archived": false
   },
   {
@@ -558,7 +562,7 @@
     },
     "pre": null,
     "updated": "2026-10-08",
-    "stars": 120,
+    "stars": 122,
     "archived": false
   },
   {
